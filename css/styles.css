@@ -99,3 +99,28 @@ body {
     color: var(--brand-accent) !important;
     opacity: 1 !important;
 }
+
+.hero-section, /* Selecciona la sección principal */
+.section-light { /* Selecciona secciones con fondo claro */
+  background-color: #d1ffd9; /* Aplica un fondo verde claro */
+}
+
+.hero-section { /* Selecciona únicamente la sección hero */
+  padding: 80px 0; /* Agrega 80px arriba y abajo, y 0 a los lados */
+}
+.hero-content, /* Selecciona el texto del hero */
+.hero-image { /* Selecciona la imagen del hero */
+  flex: 1; /* Hace que ambos elementos ocupen el mismo espacio dentro del flexbox */
+}
+
+.section-label { /* Selecciona los textos pequeños como GREEN-NOVA o NUESTRA HISTORIA */
+  color: #6fcf8f; /* Aplica color verde claro */
+  font-weight: bold; /* Hace el texto más grueso */
+  letter-spacing: 2px; /* Separa las letras */
+  font-size: 0.8rem; /* Reduce el tamaño del texto */
+}
+.btn-green { /* Selecciona botones personalizados verdes */
+  background-color: #6fcf8f; /* Aplica fondo verde claro */
+  color: white; /* Aplica texto blanco */
+  border: none; /* Elimina el borde del botón */
+}

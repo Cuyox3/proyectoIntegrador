@@ -10,14 +10,67 @@
 <body class="d-flex flex-column min-vh-screen">
 
     <!-- CUERPO PRINCIPAL / BACKGROUND -->
-    <main class="hero-section flex-grow-1 d-flex align-items-center">
-        
-        <!-- Contenido Central Dinámico -->
-        <div class="container position-relative z-1 py-5">
-            <div class="row justify-content-center text-center">
-               
-            </div>
-        </div>
+    <main>
+
+    <section class="hero-section"> <!-- Sección principal de presentación; class aplica fondo y espacio desde CSS -->
+
+      <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5"> <!-- Contenedor centrado; d-flex activa flexbox, flex-column acomoda vertical en móvil, flex-lg-row horizontal en pantallas grandes, gap-5 separa elementos -->
+
+        <article class="hero-content"> <!-- Artículo con el texto principal; class permite controlar ancho con CSS -->
+
+          <p class="section-label">GREEN-NOVA</p> <!-- Texto pequeño superior; class aplica color, tamaño y espaciado -->
+
+          <h1>Sobre Nosotros</h1> <!-- Título principal de la página -->
+
+          <p> <!-- Párrafo descriptivo -->
+            En Green-Nova creemos que la naturaleza transforma los espacios y la vida
+            de las personas. Somos una comunidad apasionada por acercar plantas saludables,
+            sostenibles y llenas de vida a cada hogar.
+          </p>
+
+          <a href="#" class="btn btn-green rounded-pill">Conoce nuestra historia</a> <!-- Botón personalizado; btn es Bootstrap, btn-green viene del CSS, rounded-pill redondea mucho -->
+
+        </article>
+
+        <figure class="hero-image m-0"> <!-- Contenedor semántico para imagen; m-0 elimina margen default de Bootstrap -->
+          <img src="img/imgplant1.png" alt="Plantas decorativas naturales" class="img-fluid rounded-4"> <!-- Imagen responsive; img-fluid adapta tamaño, rounded-4 redondea esquinas -->
+        </figure>
+
+      </div>
+
+    </section>
+    
+     <section class="py-5"> <!-- Sección de historia; py-5 agrega padding vertical con Bootstrap -->
+
+      <div class="container d-flex flex-column flex-lg-row align-items-center gap-5"> <!-- Contenedor con flexbox responsive -->
+
+        <figure class="m-0 flex-fill"> <!-- Imagen de la historia; flex-fill permite ocupar espacio disponible -->
+          <img src="img/implant2.png" alt="Plantas de interior cerca de una ventana" class="img-fluid rounded-4 shadow-sm"> <!-- Imagen responsive con esquinas redondeadas y sombra pequeña -->
+        </figure>
+
+        <article class="flex-fill"> <!-- Texto de historia; flex-fill reparte espacio con la imagen -->
+
+          <p class="section-label">NUESTRA HISTORIA</p> <!-- Etiqueta pequeña de sección -->
+
+          <h2>Sembrando bienestar desde el primer día</h2> <!-- Título secundario -->
+
+          <p> <!-- Primer párrafo de historia -->
+            Green-Nova nació de la idea de que cualquier espacio puede convertirse en un
+            refugio verde. Lo que comenzó como un pequeño vivero familiar hoy es una comunidad
+            que conecta a miles de personas con la naturaleza.
+          </p>
+
+          <p> <!-- Segundo párrafo de historia -->
+            Seleccionamos cada planta con cuidado, acompañamos a nuestros clientes en su
+            cultivo y trabajamos cada día para que la frescura de la naturaleza llegue a más hogares.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
