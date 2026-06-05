@@ -124,3 +124,171 @@ body {
   color: white; /* Aplica texto blanco */
   border: none; /* Elimina el borde del botón */
 }
+
+/* Seccion Valores pagina Nosotros Karla */
+/* Estilos base del documento */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Sección principal con el fondo verde menta */
+.mision-vision-section {
+    background-color: #d1fbe2; /* El tono verde claro idéntico al de la imagen */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+/* Contenedor flexible para alinear las tarjetas */
+.mv-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Diseño de cada tarjeta blanca */
+.mv-card {
+    background-color: #ffffff;
+    border-radius: 24px; /* Esquinas muy redondeadas y suaves */
+    padding: 45px 40px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 480px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02); /* Sombra muy sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto opcional al pasar el mouse */
+.mv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Círculo verde para albergar el icono */
+.mv-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #6ebf8a; /* Color verde medio de los iconos */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/* Tamaño de los vectores SVG internos */
+.mv-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Títulos principales (Misión / Visión) */
+.mv-card h2 {
+    color: #1e3524; /* Verde oscuro orgánico */
+    font-size: 1.6rem;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+/* Párrafos descriptivos */
+.mv-card p {
+    color: #4a574e;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Ajustes específicos para pantallas medianas o pequeñas */
+@media (max-width: 768px) {
+    .mision-vision-section {
+        padding: 40px 15px;
+    }
+    
+    .mv-card {
+        padding: 35px 25px;
+    }
+}
+/* Fin Seccion Valores pagina Nosotros */
+
+
+/* Sección principal con el fondo verde oscuro de la imagen */
+.impacto-stats {
+    background-color: #203a25; /* Verde bosque oscuro */
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Contenedor max-width para centrar el contenido en pantallas grandes */
+.stats-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Título principal de la sección */
+.stats-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+    letter-spacing: 0.5px;
+}
+
+/* Grid semántico para las estadísticas (Totalmente Responsivo) */
+.stats-grid {
+    list-style: none; /* Elimina los puntos por defecto de la lista */
+    margin: 0;
+    padding: 0;
+    display: grid;
+    /* Crea 4 columnas iguales en escritorio, mínimo 200px por columna */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+/* Cada bloque de métrica individual */
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo para los números grandes destacados */
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #72ca8e; /* Verde claro brillante de los números */
+    line-height: 1;
+}
+
+/* Estilo para las etiquetas descriptivas debajo de los números */
+.stat-label {
+    font-size: 1rem;
+    color: #d1e7d6; /* Blanco verdoso suave para una lectura descansada */
+    font-weight: 400;
+}
+
+/* Ajustes opcionales para pantallas muy pequeñas (móviles antiguos) */
+@media (max-width: 480px) {
+    .stats-heading {
+        font-size: 1.6rem;
+        margin-bottom: 35px;
+    }
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    .stat-label {
+        font-size: 0.95rem;
+    }
+}
+/*  Nosotros Karla */
+
+
