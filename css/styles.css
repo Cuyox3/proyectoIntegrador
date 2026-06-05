@@ -6,6 +6,16 @@
     --brand-medium: #2E6F40;
     --brand-light: #CFFFDC;
     --brand-accent: #68BA7F;
+
+/* se añaden fuentes  */
+
+ --br-24: 24px;
+  --br-100: 100px;
+
+  --font-arima-madurai: 'Arima Madurai', Arial, sans-serif;
+  --font-inter: 'Inter', Arial, sans-serif;
+  --font-work-sans: 'Work Sans', Arial, sans-serif;
+
 }
 
 body {
@@ -290,5 +300,78 @@ body {
     }
 }
 /*  Nosotros Karla */
+
+/*inicia seccion nuestros valores*/
+.nuestros-valores {
+  background-color: #fff;
+}
+
+/* TEXTOS DEL ENCABEZADO */
+.lo-que-nos {
+  font-size: 18px;
+  color: var(--brand-accent);
+  font-family: var(--font-arima-madurai);
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.nuestros-valores-titulo {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: var(--font-work-sans);
+  color: var(--brand-dark);
+}
+
+.los-principios-que {
+  font-family: var(--font-inter);
+  color: var(--color-gray);
+  font-size: 18px;
+}
+
+/* ESTILOS DE LAS TARJETAS */
+.tarjeta-valor {
+  border-radius: var(--br-24);
+  background-color: var(--brand-light);
+  padding: 36px 32px;
+}
+
+.icono-circulo {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--br-100);
+  background-color: var(--brand-accent);
+}
+
+.tarjeta-titulo {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--font-work-sans);
+  color: var(--brand-dark);
+}
+
+.tarjeta-texto {
+  font-size: 16px;
+  line-height: 160%;
+  font-family: var(--font-inter);
+  color: var(--color-gray);
+}
+
+/* MEDIA QUERIES (Ajustes en móviles) */
+@media screen and (max-width: 768px) {
+  .nuestros-valores-titulo {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nuestros-valores-titulo {
+    font-size: 24px;
+  }
+  .tarjeta-valor {
+    padding: 24px 20px;
+  }
+}
+/*Finaliza seccion nuestros valores
+
 
 

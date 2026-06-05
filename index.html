@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green-Nova — Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green-Nova — Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--Fuentes-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+
 </head>
+
 <body class="d-flex flex-column min-vh-screen">
 
-    <!-- CUERPO PRINCIPAL / BACKGROUND -->
-    <main>
+  <!-- CUERPO PRINCIPAL / BACKGROUND -->
+  <main>
 
     <section class="hero-section"> <!-- Sección principal de presentación; class aplica fondo y espacio desde CSS -->
 
-      <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5"> <!-- Contenedor centrado; d-flex activa flexbox, flex-column acomoda vertical en móvil, flex-lg-row horizontal en pantallas grandes, gap-5 separa elementos -->
+      <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5">
+        <!-- Contenedor centrado; d-flex activa flexbox, flex-column acomoda vertical en móvil, flex-lg-row horizontal en pantallas grandes, gap-5 separa elementos -->
 
         <article class="hero-content"> <!-- Artículo con el texto principal; class permite controlar ancho con CSS -->
 
-          <p class="section-label">GREEN-NOVA</p> <!-- Texto pequeño superior; class aplica color, tamaño y espaciado -->
+          <p class="section-label">GREEN-NOVA</p>
+          <!-- Texto pequeño superior; class aplica color, tamaño y espaciado -->
 
           <h1>Sobre Nosotros</h1> <!-- Título principal de la página -->
 
@@ -28,24 +38,29 @@
             sostenibles y llenas de vida a cada hogar.
           </p>
 
-          <a href="#" class="btn btn-green rounded-pill">Conoce nuestra historia</a> <!-- Botón personalizado; btn es Bootstrap, btn-green viene del CSS, rounded-pill redondea mucho -->
+          <a href="#" class="btn btn-green rounded-pill">Conoce nuestra historia</a>
+          <!-- Botón personalizado; btn es Bootstrap, btn-green viene del CSS, rounded-pill redondea mucho -->
 
         </article>
 
-        <figure class="hero-image m-0"> <!-- Contenedor semántico para imagen; m-0 elimina margen default de Bootstrap -->
-          <img src="img/imgplant1.png" alt="Plantas decorativas naturales" class="img-fluid rounded-4"> <!-- Imagen responsive; img-fluid adapta tamaño, rounded-4 redondea esquinas -->
+        <figure class="hero-image m-0">
+          <!-- Contenedor semántico para imagen; m-0 elimina margen default de Bootstrap -->
+          <img src="img/imgplant1.png" alt="Plantas decorativas naturales" class="img-fluid rounded-4">
+          <!-- Imagen responsive; img-fluid adapta tamaño, rounded-4 redondea esquinas -->
         </figure>
 
       </div>
 
     </section>
-    
-     <section class="py-5"> <!-- Sección de historia; py-5 agrega padding vertical con Bootstrap -->
 
-      <div class="container d-flex flex-column flex-lg-row align-items-center gap-5"> <!-- Contenedor con flexbox responsive -->
+    <section class="py-5"> <!-- Sección de historia; py-5 agrega padding vertical con Bootstrap -->
+
+      <div class="container d-flex flex-column flex-lg-row align-items-center gap-5">
+        <!-- Contenedor con flexbox responsive -->
 
         <figure class="m-0 flex-fill"> <!-- Imagen de la historia; flex-fill permite ocupar espacio disponible -->
-          <img src="img/implant2.png" alt="Plantas de interior cerca de una ventana" class="img-fluid rounded-4 shadow-sm"> <!-- Imagen responsive con esquinas redondeadas y sombra pequeña -->
+          <img src="img/implant2.png" alt="Plantas de interior cerca de una ventana"
+            class="img-fluid rounded-4 shadow-sm"> <!-- Imagen responsive con esquinas redondeadas y sombra pequeña -->
         </figure>
 
         <article class="flex-fill"> <!-- Texto de historia; flex-fill reparte espacio con la imagen -->
@@ -71,41 +86,106 @@
 
     </section>
     <section class="mision-vision-section">
-    <div class="mv-container">
-        
+      <div class="mv-container">
+
         <article class="mv-card">
-            <div class="mv-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-            </div>
-            <h2>Misión</h2>
-            <p>Ofrecer una plataforma de ecommerce que ayude a las personas en la compra y cuidado de plantas de interior y exterior. Dándoles un asesoramiento acorde a sus necesidades con el fin de reducir la falta de conocimiento sobre el cuidado de las plantas, eliminando el miedo a perder su inversión y garantizar la salud de cada planta adquirida.</p>
+          <div class="mv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h2>Misión</h2>
+          <p>Ofrecer una plataforma de ecommerce que ayude a las personas en la compra y cuidado de plantas de interior
+            y exterior. Dándoles un asesoramiento acorde a sus necesidades con el fin de reducir la falta de
+            conocimiento sobre el cuidado de las plantas, eliminando el miedo a perder su inversión y garantizar la
+            salud de cada planta adquirida.</p>
         </article>
 
         <article class="mv-card">
-            <div class="mv-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <circle cx="12" cy="12" r="6"></circle>
-                    <circle cx="12" cy="12" r="2"></circle>
-                </svg>
-            </div>
-            <h2>Visión</h2>
-            <p>Plataforma líder en el mercado digital de plantas. reconocida por experiencia de usuario y por transformar compradores sin conocimientos en cuidadores exitosos mediante herramientas digitales de acompañamiento continuo.</p>
+          <div class="mv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <h2>Visión</h2>
+          <p>Plataforma líder en el mercado digital de plantas. reconocida por experiencia de usuario y por transformar
+            compradores sin conocimientos en cuidadores exitosos mediante herramientas digitales de acompañamiento
+            continuo.</p>
         </article>
 
-    </div>
-</section>
+      </div>
+    </section>
+    <!--Seccion Nuestros valores-->
+
+    <section class="nuestros-valores py-5">
+      <div class="container">
+
+        <header class="d-flex flex-column align-items-center text-center mb-5">
+          <span class="lo-que-nos mb-2">LO QUE NOS MUEVE</span>
+          <h2 class="nuestros-valores-titulo mb-3">Nuestros valores</h2>
+          <p class="los-principios-que">
+            Los principios que cultivamos en cada planta, cada pedido y cada cliente.
+          </p>
+        </header>
+
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-12 col-md-4">
+            <article class="tarjeta-valor h-100 d-flex flex-column">
+              <div class="icono-circulo d-flex align-items-center justify-content-center mb-3">
+                <span class="fs-4 m-0 text-white" aria-hidden="true">♲</span>
+              </div>
+              <h3 class="tarjeta-titulo mb-2">Sostenibilidad</h3>
+              <p class="tarjeta-texto m-0">
+                Cuidamos el planeta con prácticas responsables, materiales
+                reutilizables y un cultivo que respeta cada ciclo natural.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="tarjeta-valor h-100 d-flex flex-column">
+              <div class="icono-circulo d-flex align-items-center justify-content-center mb-3">
+                <span class="fs-4 m-0 text-white" aria-hidden="true">✿</span>
+              </div>
+              <h3 class="tarjeta-titulo mb-2">Calidad</h3>
+              <p class="tarjeta-texto m-0">
+                Seleccionamos y revisamos cada planta para que llegue sana, fuerte y
+                lista para crecer contigo durante mucho tiempo.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="tarjeta-valor h-100 d-flex flex-column">
+              <div class="icono-circulo d-flex align-items-center justify-content-center mb-3">
+                <span class="fs-4 m-0 text-white" aria-hidden="true">♥</span>
+              </div>
+              <h3 class="tarjeta-titulo mb-2">Comunidad</h3>
+              <p class="tarjeta-texto m-0">
+                Acompañamos a cada persona con consejos y soporte cercano, porque
+                creemos en crecer juntos como una gran familia verde.
+              </p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--Final seccion nuestros valores-->
 
 
+  </main>
 
-
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="scripts/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="scripts/scripts.js"></script>
 </body>
-	
+
 </html>
