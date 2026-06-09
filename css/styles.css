@@ -594,3 +594,217 @@ body {
         font-size: 0.95rem;
     }
 }
+
+/* ==========================================================================
+   PÁGINA DE CONTACTO
+   ========================================================================== */
+
+/* ── Hero split layout ── */
+.contacto-hero {
+    min-height: 100vh;
+    background-color: #d1ffd9;
+}
+
+/* Columna del formulario */
+.contacto-form-col {
+    background: linear-gradient(145deg, #c8f5d0 0%, #a8e6b8 50%, #8dd99f 100%);
+    padding: 60px 40px;
+}
+
+.contacto-form-wrapper {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* Título */
+.contacto-titulo {
+    font-family: var(--font-work-sans);
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: var(--brand-dark);
+    margin-bottom: 32px;
+    line-height: 1.1;
+}
+
+/* Botón enviar */
+.contacto-btn-enviar {
+    background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand-medium) 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(35, 61, 44, 0.3);
+}
+
+.contacto-btn-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(35, 61, 44, 0.4);
+    background: linear-gradient(135deg, var(--brand-medium) 0%, var(--brand-accent) 100%);
+    color: #ffffff;
+}
+
+.contacto-btn-enviar:active {
+    transform: translateY(-1px);
+}
+
+.contacto-btn-enviar:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ── Columna de imagen (helecho) ── */
+.contacto-img-col {
+    background: linear-gradient(135deg, #233D2C 0%, #2E6F40 60%, #3a8a52 100%);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contacto-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+}
+
+.contacto-fern-img {
+    max-width: 90%;
+    max-height: 75vh;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.3));
+    animation: fernFloat 6s ease-in-out infinite;
+}
+
+@keyframes fernFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50%      { transform: translateY(-15px) rotate(1deg); }
+}
+
+/* ── Sección inferior: info cards ── */
+.contacto-bottom-section {
+    background-color: var(--brand-dark);
+    padding: 70px 0;
+}
+
+.contacto-bottom-card {
+    background: linear-gradient(145deg, rgba(46, 111, 64, 0.4) 0%, rgba(35, 61, 44, 0.6) 100%);
+    border: 1px solid rgba(104, 186, 127, 0.2);
+    border-radius: 20px;
+    padding: 40px 28px;
+    transition: all 0.35s ease;
+}
+
+.contacto-bottom-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--brand-accent);
+    box-shadow: 0 12px 40px rgba(104, 186, 127, 0.15);
+}
+
+.contacto-bottom-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--brand-accent) 0%, var(--brand-medium) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.contacto-bottom-card:hover .contacto-bottom-icon {
+    transform: scale(1.1);
+}
+
+.contacto-bottom-title {
+    font-family: var(--font-work-sans);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contacto-bottom-text {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Social links */
+.contacto-social-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.contacto-social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(104, 186, 127, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.contacto-social-link:hover {
+    background-color: var(--brand-accent);
+    border-color: var(--brand-accent);
+    color: var(--brand-dark);
+    transform: translateY(-3px);
+}
+
+/* ── RESPONSIVE: Contacto ── */
+@media (max-width: 991.98px) {
+    .contacto-form-col {
+        padding: 50px 24px;
+    }
+
+    .contacto-titulo {
+        font-size: 2.2rem;
+    }
+
+    .contacto-hero {
+        min-height: auto;
+    }
+
+    .contacto-hero .row {
+        min-height: auto !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contacto-form-col {
+        padding: 40px 18px;
+    }
+
+    .contacto-titulo {
+        font-size: 1.8rem;
+        margin-bottom: 24px;
+    }
+
+    .contacto-btn-enviar {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    .contacto-bottom-section {
+        padding: 50px 0;
+    }
+
+    .contacto-bottom-card {
+        padding: 30px 20px;
+    }
+}

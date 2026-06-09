@@ -2,7 +2,7 @@
     'use strict';
 
     const EMAILJS_SERVICE_ID  = 'service_0a27wrd';
-    const EMAILJS_TEMPLATE_ID = 'template_contact_us'; 
+    const EMAILJS_TEMPLATE_ID = 'template_p0zvahe'; 
     const EMAILJS_PUBLIC_KEY  = '_6gsEKA7tILIt971C';
 
     emailjs.init(EMAILJS_PUBLIC_KEY);
