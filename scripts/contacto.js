@@ -38,10 +38,33 @@
         }
     }
 
+    function validarCampos() {
+        const reglas = [
+            { id: 'nombre',  regex: /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]{2,50}$/,                   error: 'Solo letras, entre 2 y 50 caracteres.' },
+            { id: 'apellido',regex: /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]{2,50}$/,                   error: 'Solo letras, entre 2 y 50 caracteres.' },
+            { id: 'email',   regex: /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/, error: 'Correo no válido.' },
+            { id: 'mensaje', regex: /^[\s\S]{10,1000}$/,                                    error: 'Mínimo 10 caracteres.' }
+        ];
+
+        let valido = true;
+        reglas.forEach(function (r) {
+            const campo = document.getElementById(r.id);
+            const feedback = campo.parentElement.querySelector('.invalid-feedback');
+            if (!r.regex.test(campo.value.trim())) {
+                campo.classList.add('is-invalid');
+                if (feedback) feedback.textContent = r.error;
+                valido = false;
+            } else {
+                campo.classList.remove('is-invalid');
+            }
+        });
+        return valido;
+    }
+
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        if (!form.checkValidity()) {
+        if (!validarCampos()) {
             form.classList.add('was-validated');
             showToast('Por favor completa todos los campos correctamente.', false);
             return;
