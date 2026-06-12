@@ -40,11 +40,11 @@
 
     function validarCampos() {
         const reglas = [
-            { id: "nombre", regex: /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]{2,50}$/, error: "Solo letras, entre 2 y 50 caracteres." },
+            { id: "nombre", regex: /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]{3,50}$/, error: "Solo letras, entre 3 y 50 caracteres." },
             {
                 id: "apellido",
-                regex: /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]{2,50}$/,
-                error: "Solo letras, entre 2 y 50 caracteres."
+                regex: /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]{3,50}$/,
+                error: "Solo letras, entre 3 y 50 caracteres."
             },
             { id: "email", regex: /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/, error: "Correo no válido." },
             { id: "mensaje", regex: /^[\s\S]{10,1000}$/, error: "Mínimo 10 caracteres." }
