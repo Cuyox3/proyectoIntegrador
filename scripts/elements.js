@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Menu Desplegable -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto mb-3 mb-md-0 gap-md-2 text-center">
-                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="inicio.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contactanos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     </ul>
                     
                     <!-- Botones -->
