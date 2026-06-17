@@ -161,3 +161,50 @@ const plantasExterior = [
   }
 
 ];
+
+//Macetas
+const macetas = [
+    {
+        id: "m001", // Convertido a string
+        nombre: "Cilíndricas", // Comilla cerrada
+        precio: 250,
+        imagen: "https://zuccudesign.com/cdn/shop/products/cilindricamediana1.jpg?v=1674328585",
+        descripcionCorta: "Maceta minimalista con tonos grises o pastel.",
+        descripcionLarga: "Su estética cruda combina perfecto con el verde intenso de plantas como la Monstera o el Ficus Lyrata. Al ser pesadas, le dan una estabilidad increíble a plantas altas."
+    },
+    {
+        id: "m002",
+        nombre: "Cubremacetas",
+        precio: 350,
+            imagen: "https://hersteragarden.com/shop/wp-content/uploads/2023/10/categoria-cubremacetas-orquideas.jpg",
+
+        descripcionCorta: "maceta de cerámica esmaltada (normalmente blanca o negra) que se asienta sobre un soporte de madera de tres o cuatro patas que la eleva del suelo",
+        descripcionLarga: "Es la favorita para poner en las esquinas de las salas de estar o junto al escritorio del jefe."
+    },
+    {
+        id: "m003",
+        nombre: "Plástico con Texturas",
+        precio: 350,
+            imagen: "https://http2.mlstatic.com/D_NQ_NP_702598-MLM109425230926_042026-O.webp",
+
+        descripcionCorta: "Son macetas de plástico de alta calidad que, visualmente, imitan a la perfección otros materiales como el tejido de ratán, la madera o la piedra tallada",
+        descripcionLarga: "Tienen la estética sofisticada de una maceta pesada y costosa, pero con los beneficios del plástico: son superbaratas, ligeras, fáciles de mover y retienen excelente la humedad."
+    },
+    {
+        id: "m004",
+        nombre: "Colgantes",
+        precio: 550,
+            imagen: "https://http2.mlstatic.com/D_NQ_NP_612416-MLM46471454692_062021-O.webp",
+
+        descripcionCorta: "Suelen ser de plástico o resina ligera, vienen con cordones resistentes (o cadenas) para colgar del techo o repisas, e incorporan un pequeño tanque de agua en la base",
+        descripcionLarga: "El diseño vertical está en supertendencia para aprovechar espacios pequeños. Como las plantas colgantes suelen ser difíciles de alcanzar para regar seguido, el sistema de auto-riego te ahorra tener que subirte a una silla cada tres días. Son las compañeras perfectas de los Potos"
+    },
+    {
+        id: "m005",
+        nombre: "Terracota",
+        precio: 350,
+        imagen: "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&width=1946",
+        descripcionCorta: "A pesar de los años y la tecnología, la maceta tradicional de barro color ladrillo sigue estando en el top de ventas a nivel mundial.",
+        descripcionLarga: "Se han vuelto un elemento de culto para los amantes de las plantas de estilo 'vintage' o rústico. Además, los científicos de las plantas y los jardineros expertos las siguen prefiriendo por encima de cualquier otra porque es el material más sano para las raíces de la planta." // 'vintage' corregido
+    }
+];
