@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto mb-3 mb-md-0 gap-md-2 text-center">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contactanos</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     </ul>
