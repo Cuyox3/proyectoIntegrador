@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Menu Desplegable -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto mb-3 mb-md-0 gap-md-2 text-center">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contactanos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
                     </ul>
                     
                     <!-- Botones -->
@@ -122,28 +122,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adjuntar al final del <body>
     document.body.appendChild(footer);
-
-
-    /* CARRUSEL EQUIPO: botón "Ver más" / "Ver menos" */
-    document.querySelectorAll('.equipo-detalle').forEach((detalle) => {
-        const boton = document.querySelector(`[data-bs-target="#${detalle.id}"]`);
-        if (!boton) return;
-
-        detalle.addEventListener('show.bs.collapse', () => {
-            boton.textContent = 'Ver menos';
-        });
-        detalle.addEventListener('hide.bs.collapse', () => {
-            boton.textContent = 'Ver más';
-        });
-    });
-
-    /* Cerrar los textos abiertos al cambiar de tarjeta en el carrusel */
-    const equipoCarousel = document.getElementById('equipoCarousel');
-    if (equipoCarousel) {
-        equipoCarousel.addEventListener('slide.bs.carousel', () => {
-            equipoCarousel.querySelectorAll('.equipo-detalle.show').forEach((detalle) => {
-                bootstrap.Collapse.getOrCreateInstance(detalle).hide();
-            });
-        });
-    }
 });
