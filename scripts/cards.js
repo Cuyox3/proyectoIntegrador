@@ -321,6 +321,9 @@ function cargarTodos() {
   });
 }
 
+
+
+
 todosBtn.addEventListener("click", cargarTodos);
 interiorBtn.addEventListener("click", () => cargarTarjetas(plantasInterior));
 exteriorBtn.addEventListener("click", () => cargarTarjetas(plantasExterior));
