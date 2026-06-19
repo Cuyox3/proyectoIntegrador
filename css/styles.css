@@ -2,26 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700;900&display=swap');
 
 :root {
-<<<<<<< HEAD
-=======
     /* Paleta principal */
->>>>>>> origin/karlaElizabethGonzalez
     --brand-dark: #233D2C;
     --brand-medium: #2E6F40;
     --brand-light: #CFFFDC;
     --brand-accent: #68BA7F;
 
-<<<<<<< HEAD
-/* se añaden fuentes  */
-
- --br-24: 24px;
-  --br-100: 100px;
-
-  --font-arima-madurai: 'Arima Madurai', Arial, sans-serif;
-  --font-inter: 'Inter', Arial, sans-serif;
-  --font-work-sans: 'Work Sans', Arial, sans-serif;
-
-=======
     /* Tamaños y bordes */
     --br-24: 24px;
     --br-100: 100px;
@@ -37,16 +23,11 @@
     --bg-cta: #2E6F40;         
     --color-texto-claro: #FFFFFF;
     --color-btn: #68BA7F;      
->>>>>>> origin/karlaElizabethGonzalez
 }
 
 body {
     font-family: 'Arima', sans-serif;
     background-color: #f8f9fa;
-<<<<<<< HEAD
-}
-/* Navbar */
-=======
     margin: 0;
     padding: 0;
 }
@@ -54,7 +35,6 @@ body {
 /* ==========================================================================
    NAVBAR
    ========================================================================== */
->>>>>>> origin/karlaElizabethGonzalez
 .custom-navbar {
     background-color: var(--brand-dark) !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -117,70 +97,6 @@ body {
     color: var(--brand-dark);
 }
 
-<<<<<<< HEAD
-
-
-/* --- FOOTER PERSONALIZADO --- */
-.custom-footer {
-    background-color: var(--brand-dark);
-    border-top: 1px solid var(--brand-medium);
-}
-.text-brand-light {
-    color: var(--brand-light) !important;
-}
-.custom-footer a {
-    transition: color 0.2s ease;
-}
-.custom-footer a:hover {
-    color: var(--brand-accent) !important;
-}
-.z-1 {
-    z-index: 1;
-}
-/* Efecto hover para iconos Font Awesome */
-.hover-accent:hover {
-    color: var(--brand-accent) !important;
-    opacity: 1 !important;
-}
-
-.hero-section, /* Selecciona la sección principal */
-.section-light { /* Selecciona secciones con fondo claro */
-  background-color: #d1ffd9; /* Aplica un fondo verde claro */
-}
-
-.hero-section { /* Selecciona únicamente la sección hero */
-  padding: 80px 0; /* Agrega 80px arriba y abajo, y 0 a los lados */
-}
-.hero-content, /* Selecciona el texto del hero */
-.hero-image { /* Selecciona la imagen del hero */
-  flex: 1; /* Hace que ambos elementos ocupen el mismo espacio dentro del flexbox */
-}
-
-.section-label { /* Selecciona los textos pequeños como GREEN-NOVA o NUESTRA HISTORIA */
-  color: #6fcf8f; /* Aplica color verde claro */
-  font-weight: bold; /* Hace el texto más grueso */
-  letter-spacing: 2px; /* Separa las letras */
-  font-size: 0.8rem; /* Reduce el tamaño del texto */
-}
-.btn-green { /* Selecciona botones personalizados verdes */
-  background-color: #6fcf8f; /* Aplica fondo verde claro */
-  color: white; /* Aplica texto blanco */
-  border: none; /* Elimina el borde del botón */
-}
-
-/* Seccion Valores pagina Nosotros Karla */
-/* Estilos base del documento */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-}
-
-/* Sección principal con el fondo verde menta */
-.mision-vision-section {
-    background-color: #d1fbe2; /* El tono verde claro idéntico al de la imagen */
-=======
 /* ==========================================================================
    HERO & PRESENTACIÓN
    ========================================================================== */
@@ -381,7 +297,6 @@ body {
    ========================================================================== */
 .mision-vision-section {
     background-color: #d1fbe2; 
->>>>>>> origin/karlaElizabethGonzalez
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -389,10 +304,6 @@ body {
     min-height: 400px;
 }
 
-<<<<<<< HEAD
-/* Contenedor flexible para alinear las tarjetas */
-=======
->>>>>>> origin/karlaElizabethGonzalez
 .mv-container {
     display: flex;
     flex-wrap: wrap;
@@ -402,50 +313,27 @@ body {
     justify-content: center;
 }
 
-<<<<<<< HEAD
-/* Diseño de cada tarjeta blanca */
-.mv-card {
-    background-color: #ffffff;
-    border-radius: 24px; /* Esquinas muy redondeadas y suaves */
-=======
 .mv-card {
     background-color: #ffffff;
     border-radius: 24px; 
->>>>>>> origin/karlaElizabethGonzalez
     padding: 45px 40px;
     flex: 1;
     min-width: 280px;
     max-width: 480px;
     box-sizing: border-box;
-<<<<<<< HEAD
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02); /* Sombra muy sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efecto opcional al pasar el mouse */
-=======
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
->>>>>>> origin/karlaElizabethGonzalez
 .mv-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 }
 
-<<<<<<< HEAD
-/* Círculo verde para albergar el icono */
-.mv-icon {
-    width: 50px;
-    height: 50px;
-    background-color: #6ebf8a; /* Color verde medio de los iconos */
-=======
 .mv-icon {
     width: 50px;
     height: 50px;
     background-color: #6ebf8a; 
->>>>>>> origin/karlaElizabethGonzalez
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -453,32 +341,18 @@ body {
     margin-bottom: 25px;
 }
 
-<<<<<<< HEAD
-/* Tamaño de los vectores SVG internos */
-=======
->>>>>>> origin/karlaElizabethGonzalez
 .mv-icon svg {
     width: 24px;
     height: 24px;
 }
 
-<<<<<<< HEAD
-/* Títulos principales (Misión / Visión) */
-.mv-card h2 {
-    color: #1e3524; /* Verde oscuro orgánico */
-=======
 .mv-card h2 {
     color: #1e3524; 
->>>>>>> origin/karlaElizabethGonzalez
     font-size: 1.6rem;
     margin: 0 0 15px 0;
     font-weight: 700;
 }
 
-<<<<<<< HEAD
-/* Párrafos descriptivos */
-=======
->>>>>>> origin/karlaElizabethGonzalez
 .mv-card p {
     color: #4a574e;
     font-size: 1rem;
@@ -486,105 +360,13 @@ body {
     margin: 0;
 }
 
-<<<<<<< HEAD
-/* Ajustes específicos para pantallas medianas o pequeñas */
-@media (max-width: 768px) {
-    .mision-vision-section {
-        padding: 40px 15px;
-    }
-    
-    .mv-card {
-        padding: 35px 25px;
-    }
-}
-/* Fin Seccion Valores pagina Nosotros */
-
-
-/* Sección principal con el fondo verde oscuro de la imagen */
-.impacto-stats {
-    background-color: #203a25; /* Verde bosque oscuro */
-    color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* Contenedor max-width para centrar el contenido en pantallas grandes */
-.stats-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* Título principal de la sección */
-.stats-heading {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0 0 50px 0;
-    letter-spacing: 0.5px;
-}
-
-/* Grid semántico para las estadísticas (Totalmente Responsivo) */
-.stats-grid {
-    list-style: none; /* Elimina los puntos por defecto de la lista */
-    margin: 0;
-    padding: 0;
-    display: grid;
-    /* Crea 4 columnas iguales en escritorio, mínimo 200px por columna */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-}
-
-/* Cada bloque de métrica individual */
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Estilo para los números grandes destacados */
-.stat-number {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #72ca8e; /* Verde claro brillante de los números */
-    line-height: 1;
-}
-
-/* Estilo para las etiquetas descriptivas debajo de los números */
-.stat-label {
-    font-size: 1rem;
-    color: #d1e7d6; /* Blanco verdoso suave para una lectura descansada */
-    font-weight: 400;
-}
-
-/* Ajustes opcionales para pantallas muy pequeñas (móviles antiguos) */
-@media (max-width: 480px) {
-    .stats-heading {
-        font-size: 1.6rem;
-        margin-bottom: 35px;
-    }
-    .stat-number {
-        font-size: 2.5rem;
-    }
-    .stat-label {
-        font-size: 0.95rem;
-    }
-}
-/*  Nosotros Karla */
-
-/*inicia seccion nuestros valores*/
-=======
 /* ==========================================================================
    SECCIÓN NUESTROS VALORES
    ========================================================================== */
->>>>>>> origin/karlaElizabethGonzalez
 .nuestros-valores {
   background-color: #fff;
 }
 
-<<<<<<< HEAD
-/* TEXTOS DEL ENCABEZADO */
-=======
->>>>>>> origin/karlaElizabethGonzalez
 .lo-que-nos {
   font-size: 18px;
   color: var(--brand-accent);
@@ -606,10 +388,6 @@ body {
   font-size: 18px;
 }
 
-<<<<<<< HEAD
-/* ESTILOS DE LAS TARJETAS */
-=======
->>>>>>> origin/karlaElizabethGonzalez
 .tarjeta-valor {
   border-radius: var(--br-24);
   background-color: var(--brand-light);
@@ -637,26 +415,6 @@ body {
   color: var(--color-gray);
 }
 
-<<<<<<< HEAD
-/* MEDIA QUERIES (Ajustes en móviles) */
-@media screen and (max-width: 768px) {
-  .nuestros-valores-titulo {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .nuestros-valores-titulo {
-    font-size: 24px;
-  }
-  .tarjeta-valor {
-    padding: 24px 20px;
-  }
-}
-/*Finaliza seccion nuestros valores
-
-
-=======
 /* ==========================================================================
    SECCIÓN NUESTRO IMPACTO EN CIFRAS
    ========================================================================== */
@@ -1099,5 +857,4 @@ body {
     .btn-filtro:active {
     transform: scale(0.95);
     }
->>>>>>> origin/karlaElizabethGonzalez
 

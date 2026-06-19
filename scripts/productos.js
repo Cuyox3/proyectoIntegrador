@@ -190,11 +190,8 @@ export const plantasExterior = [
   },
 ];
 
-//<<<<<<< HEAD
-//];
-
 //Macetas
-const macetas = [
+export const  macetas = [
     {
         id: "m001", // Convertido a string
         nombre: "Cilíndricas", // Comilla cerrada
@@ -237,11 +234,64 @@ const macetas = [
         imagen: "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&width=1946",
         descripcionCorta: "A pesar de los años y la tecnología, la maceta tradicional de barro color ladrillo sigue estando en el top de ventas a nivel mundial.",
         descripcionLarga: "Se han vuelto un elemento de culto para los amantes de las plantas de estilo 'vintage' o rústico. Además, los científicos de las plantas y los jardineros expertos las siguen prefiriendo por encima de cualquier otra porque es el material más sano para las raíces de la planta." // 'vintage' corregido
-    }
+    },
+
+
+//Macetas2
+  {
+    id: "m006", // Convertido a string
+    nombre: "Cilíndricas", // Comilla cerrada
+    precio: 250,
+    imagen:
+      "https://zuccudesign.com/cdn/shop/products/cilindricamediana1.jpg?v=1674328585",
+    descripcionCorta: "Diseño minimalista de líneas limpias.",
+    descripcionLarga:
+      "Nuestra maceta cilíndrica resalta por su estética moderna y contemporánea. Ideal para plantas de crecimiento vertical como las sansevierias. Cuenta con un excelente acabado que se adapta a cualquier rincón de tu sala u oficina.",
+  },
+  {
+    id: "m007",
+    nombre: "Cubremacetas",
+    precio: 350,
+    imagen:
+      "https://hersteragarden.com/shop/wp-content/uploads/2023/10/categoria-cubremacetas-orquideas.jpg",
+    descripcionCorta:
+      "El accesorio perfecto para ocultar la maceta de plástico.",
+    descripcionLarga:
+      "Este cubremacetas está diseñado exclusivamente para dar un toque decorativo instantáneo. No tiene agujero de drenaje, lo que evita filtraciones de agua y protege tus muebles mientras hace lucir tus plantas espectaculares.",
+  },
+  {
+    id: "m008",
+    nombre: "Plástico con Texturas",
+    precio: 350,
+    imagen:
+      "https://http2.mlstatic.com/D_NQ_NP_702598-MLM109425230926_042026-O.webp",
+descripcionCorta: "Ligera, resistente y con un relieve único.",
+    descripcionLarga: "Fabricada con polímeros de alta resistencia, esta maceta combina la ligereza del plástico con un acabado texturizado premium que imita materiales artesanales. Es duradera, fácil de limpiar y perfecta tanto para interiores como exteriores."
+  },
+  {
+    id: "m009",
+    nombre: "Colgantes",
+    precio: 550,
+    imagen:
+      "https://http2.mlstatic.com/D_NQ_NP_612416-MLM46471454692_062021-O.webp",
+
+    descripcionCorta: "Ideal para plantas colgantes y espacios reducidos.",
+    descripcionLarga: "Aprovecha la altura de tu hogar con esta maceta colgante. Incluye un sistema de soporte seguro y resistente, ideal para lucir plantas tipo teléfono (pothos), listones o suculentas colgantes, dándole dinamismo a tus paredes o balcones."
+  },
+  {
+    id: "m010",
+    nombre: "Terracota",
+    precio: 350,
+    imagen:
+      "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&width=1946",
+    descripcionCorta: "Arcilla clásica y porosa para una óptima salud radicular.",
+    descripcionLarga: "La maceta de terracota tradicional es la favorita de los expertos en plantas. Su material poroso permite que la tierra 'respire' y el exceso de humedad se evapore fácilmente, previniendo eficazmente la pudrición de las raíces."
+  },
 ];
 
+
 //Accesorios
-const accesorios = [
+export const  accesorios = [
 
     {
     id: 1,
@@ -314,62 +364,98 @@ const accesorios = [
     id: 10,
     nombre: "Piedras decorativas",
     nombreComun: "Piedras para decorar",
-    función: "Para dar un acabado limpio y profesional a las macetas",
+    funcion: "Para dar un acabado limpio y profesional a las macetas",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EdJ4r5FWSwl7l8h2ExMrJWC0GWoFImmUVqVUCnIbhA&s=10"
   }
 
 ];
-//=======
-//Macetas
-export const macetas = [
-  {
-    id: "m001", // Convertido a string
-    nombre: "Cilíndricas", // Comilla cerrada
-    precio: 250,
-    imagen:
-      "https://zuccudesign.com/cdn/shop/products/cilindricamediana1.jpg?v=1674328585",
-    descripcionCorta: "Diseño minimalista de líneas limpias.",
-    descripcionLarga:
-      "Nuestra maceta cilíndrica resalta por su estética moderna y contemporánea. Ideal para plantas de crecimiento vertical como las sansevierias. Cuenta con un excelente acabado que se adapta a cualquier rincón de tu sala u oficina.",
-  },
-  {
-    id: "m002",
-    nombre: "Cubremacetas",
-    precio: 350,
-    imagen:
-      "https://hersteragarden.com/shop/wp-content/uploads/2023/10/categoria-cubremacetas-orquideas.jpg",
-    descripcionCorta:
-      "El accesorio perfecto para ocultar la maceta de plástico.",
-    descripcionLarga:
-      "Este cubremacetas está diseñado exclusivamente para dar un toque decorativo instantáneo. No tiene agujero de drenaje, lo que evita filtraciones de agua y protege tus muebles mientras hace lucir tus plantas espectaculares.",
-  },
-  {
-    id: "m003",
-    nombre: "Plástico con Texturas",
-    precio: 350,
-    imagen:
-      "https://http2.mlstatic.com/D_NQ_NP_702598-MLM109425230926_042026-O.webp",
-descripcionCorta: "Ligera, resistente y con un relieve único.",
-    descripcionLarga: "Fabricada con polímeros de alta resistencia, esta maceta combina la ligereza del plástico con un acabado texturizado premium que imita materiales artesanales. Es duradera, fácil de limpiar y perfecta tanto para interiores como exteriores."
-  },
-  {
-    id: "m004",
-    nombre: "Colgantes",
-    precio: 550,
-    imagen:
-      "https://http2.mlstatic.com/D_NQ_NP_612416-MLM46471454692_062021-O.webp",
 
-    descripcionCorta: "Ideal para plantas colgantes y espacios reducidos.",
-    descripcionLarga: "Aprovecha la altura de tu hogar con esta maceta colgante. Incluye un sistema de soporte seguro y resistente, ideal para lucir plantas tipo teléfono (pothos), listones o suculentas colgantes, dándole dinamismo a tus paredes o balcones."
+//Suculentas  (5)
+export const suculentas = [
+  {
+    id: "s001",
+    nombre: "Echeveria Perlevon",
+    precio: 150,
+    imagen: "https://images.pexels.com/photos/1903965/pexels-photo-1903965.jpeg",
+    descripcionCorta: "Roseta compacta con hojas de color verde menta.",
+    descripcionLarga: "Variedad de Echeveria conocida por su forma de roseta simétrica y sus hojas carnosas de color verde menta o blanco azulado, a menudo con bordes rosados si recibe suficiente sol."
   },
   {
-    id: "m005",
-    nombre: "Terracota",
-    precio: 350,
-    imagen:
-      "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&width=1946",
-    descripcionCorta: "Arcilla clásica y porosa para una óptima salud radicular.",
-    descripcionLarga: "La maceta de terracota tradicional es la favorita de los expertos en plantas. Su material poroso permite que la tierra 'respire' y el exceso de humedad se evapore fácilmente, previniendo eficazmente la pudrición de las raíces."
+    id: "s002",
+    nombre: "Sempervivum Tectorum",
+    precio: 120,
+    imagen: "https://images.pexels.com/photos/1382396/pexels-photo-1382396.jpeg",
+    descripcionCorta: "Resistente y adaptable con hojas que adquieren tonos rojizos.",
+    descripcionLarga: "También conocida como 'Siempreviva', es una suculenta alpina extremadamente resistente. Forma rosetas compactas que se multiplican fácilmente por hijuelos. Sus hojas son de color verde con puntas rojizas o moradas bajo estrés lumínico."
   },
+  {
+    id: "s003",
+    nombre: "Sedum Morganianum",
+    precio: 180,
+    imagen: "https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg",
+    descripcionCorta: "Colgante con forma de cola de burro.",
+    descripcionLarga: "Conocida popularmente como 'Cola de burro', esta suculenta destaca por sus largos tallos colgantes cubiertos de hojas cilíndricas y carnosas de color verde grisáceo. Es perfecta para cestas colgantes donde sus tallos pueden caer libremente."
+  },
+  {
+    id: "s004",
+    nombre: "Crassula Ovata 'Gollum'",
+    precio: 200,
+    imagen: "https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg",
+    descripcionCorta: "Hojas únicas con forma de tubo.",
+    descripcionLarga: "Una variedad curiosa de la Crassula ovata. Sus hojas tienen una forma tubular y retorcida que recuerda a las orejas del personaje de 'El Señor de los Anillos'. Es de crecimiento lento y muy decorativa."
+  },
+  {
+    id: "s005",
+    nombre: "Kalanchoe Thyrisflora",
+    precio: 150,
+    imagen: "https://images.pexels.com/photos/1006293/pexels-photo-1006293.jpeg",
+    descripcionCorta: "Hojas grandes y redondeadas con puntas rojas.",
+    descripcionLarga: "Esta Kalanchoe se caracteriza por sus hojas grandes, redondeadas y carnosas de color verde grisáceo. Cuando recibe suficiente luz solar, los bordes de las hojas se vuelven de un llamativo color rojo anaranjado."
+  }
 ];
-//>>>>>>> origin/karlaElizabethGonzalez
+
+
+//Cactus (5)
+
+export const cactus = [
+  {
+    id: "c001",
+    nombre: "Opuntia Microdasys",
+    precio: 120,
+    imagen: "https://images.pexels.com/photos/2132240/pexels-photo-2132240.jpeg",
+    descripcionCorta: "Cactus con paletas ovaladas cubiertas de pelusa dorada.",
+    descripcionLarga: "Conocido como 'Nopal de orejas de conejo', este cactus mexicano tiene paletas planas cubiertas de pequeños grupos de gloquidios dorados o blancos. Es compacto, de crecimiento lento y muy decorativo para interiores luminosos."
+  },
+  {
+    id: "c002",
+    nombre: "Echinocactus Grusonii",
+    precio: 250,
+    imagen: "https://images.pexels.com/photos/4622977/pexels-photo-4622977.jpeg",
+    descripcionCorta: "Cactus esférico con espinas doradas brillantes.",
+    descripcionLarga: "El famoso 'Asiento de suegra' es uno de los cactus más reconocidos del mundo. Su forma esférica perfecta y sus espinas doradas lo convierten en una pieza escultórica viva. Es originario de México y puede vivir décadas con cuidados mínimos."
+  },
+  {
+    id: "c003",
+    nombre: "Mammillaria Hahniana",
+    precio: 140,
+    imagen: "https://images.pexels.com/photos/3645055/pexels-photo-3645055.jpeg",
+    descripcionCorta: "Cactus redondo cubierto de pelusa blanca sedosa.",
+    descripcionLarga: "Conocido como 'Cactus viejo' por su abundante pelusa blanca, este cactus produce una hermosa corona de pequeñas flores rosadas o magenta en primavera. Es muy resistente y requiere riego mínimo, perfecto para principiantes."
+  },
+  {
+    id: "c004",
+    nombre: "Ferocactus Glaucescens",
+    precio: 180,
+    imagen: "https://images.pexels.com/photos/1382394/pexels-photo-1382394.jpeg",
+    descripcionCorta: "Cactus azul-verdoso con espinas amarillas prominentes.",
+    descripcionLarga: "La 'Biznaga azul' es un cactus globular de tono azul grisáceo con costillas bien marcadas y espinas amarillas. Originario de México, puede producir flores amarillas en verano. Es ideal para jardines de rocas y colecciones de cactáceas."
+  },
+  {
+    id: "c005",
+    nombre: "Gymnocalycium Mihanovichii",
+    precio: 160,
+    imagen: "https://images.pexels.com/photos/2306562/pexels-photo-2306562.jpeg",
+    descripcionCorta: "Cactus injertado de colores vibrantes.",
+    descripcionLarga: "El 'Cactus injertado' o 'Cactus de colores' es una mutación que carece de clorofila y se injerta sobre otro cactus para sobrevivir. Viene en colores llamativos como rojo, naranja, amarillo y rosa. Es un regalo popular y un punto focal decorativo."
+  }
+];
