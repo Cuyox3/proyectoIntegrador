@@ -1,375 +1,260 @@
-//Plantas de interior
-
+// Plantas de interior
 export const plantasInterior = [
   {
     id: 1,
     nombre: "Monstera Deliciosa",
-    nombreComun: "Costilla de Adán",
-    luz: "Indirecta brillante",
-    riego: "1 vez por semana",
-    imagen:
-      "https://images.pexels.com/photos/37820513/pexels-photo-37820513.jpeg",
+    precio: 950,
+    descripcion: "planta para interior luz: Indirecta brillante, riego: 1 vez por semana",
+    imagen: "https://images.pexels.com/photos/37820513/pexels-photo-37820513.jpeg"
   },
   {
     id: 2,
     nombre: "Sansevieria Trifasciata",
-    nombreComun: "Lengua de Suegra",
-    luz: "Baja a alta",
-    riego: "Cada 2 semanas",
-    imagen:
-      "https://images.pexels.com/photos/9809329/pexels-photo-9809329.jpeg",
+    precio: 450,
+    descripcion: "planta para interior luz: Baja a alta, riego: Cada 2 semanas",
+    imagen: "https://images.pexels.com/photos/9809329/pexels-photo-9809329.jpeg"
   },
   {
     id: 3,
     nombre: "Epipremnum Aureum",
-    nombreComun: "Poto",
-    luz: "Indirecta media",
-    riego: "1 vez por semana",
-    imagen:
-      "https://images.pexels.com/photos/5215510/pexels-photo-5215510.jpeg",
+    precio: 350,
+    descripcion: "planta para interior luz: Indirecta media, riego: 1 vez por semana",
+    imagen: "https://images.pexels.com/photos/5215510/pexels-photo-5215510.jpeg"
   },
   {
     id: 4,
     nombre: "Spathiphyllum",
-    nombreComun: "Lirio de la Paz",
-    luz: "Indirecta baja",
-    riego: "Mantener húmedo",
-    imagen:
-      "https://images.pexels.com/photos/9731992/pexels-photo-9731992.jpeg",
+    precio: 380,
+    descripcion: "planta para interior luz: Indirecta baja, riego: Mantener húmedo",
+    imagen: "https://images.pexels.com/photos/9731992/pexels-photo-9731992.jpeg"
   },
   {
     id: 5,
     nombre: "Ficus Elastica",
-    nombreComun: "Árbol de Caucho",
-    luz: "Indirecta brillante",
-    riego: "Cada 7-10 días",
-    imagen:
-      "https://images.pexels.com/photos/8989427/pexels-photo-8989427.jpeg",
+    precio: 650,
+    descripcion: "planta para interior luz: Indirecta brillante, riego: Cada 7-10 días",
+    imagen: "https://images.pexels.com/photos/8989427/pexels-photo-8989427.jpeg"
   },
   {
     id: 6,
     nombre: "Zamioculcas Zamiifolia",
-    nombreComun: "ZZ Plant",
-    luz: "Baja a media",
-    riego: "Cada 2-3 semanas",
-    imagen:
-      "https://images.pexels.com/photos/10194608/pexels-photo-10194608.jpeg",
+    precio: 550,
+    descripcion: "planta para interior luz: Baja a media, riego: Cada 2-3 semanas",
+    imagen: "https://images.pexels.com/photos/10194608/pexels-photo-10194608.jpeg"
   },
   {
     id: 7,
     nombre: "Chamaedorea Elegans",
-    nombreComun: "Palma de Salón",
-    luz: "Indirecta media",
-    riego: "1 vez por semana",
-    imagen:
-      "https://images.pexels.com/photos/3952088/pexels-photo-3952088.jpeg",
+    precio: 420,
+    descripcion: "planta para interior luz: Indirecta media, riego: 1 vez por semana",
+    imagen: "https://images.pexels.com/photos/3952088/pexels-photo-3952088.jpeg"
   },
   {
     id: 8,
     nombre: "Dracaena Marginata",
-    nombreComun: "Drácena",
-    luz: "Indirecta brillante",
-    riego: "Cada 10 días",
-    imagen:
-      "https://images.pexels.com/photos/3952088/pexels-photo-3952088.jpeg",
+    precio: 480,
+    descripcion: "planta para interior luz: Indirecta brillante, riego: Cada 10 días",
+    imagen: "https://images.pexels.com/photos/3952088/pexels-photo-3952088.jpeg"
   },
   {
     id: 9,
     nombre: "Aglaonema",
-    nombreComun: "Aglaonema Roja",
-    luz: "Baja a media",
-    riego: "1 vez por semana",
-    imagen:
-      "https://images.pexels.com/photos/5672795/pexels-photo-5672795.jpeg",
+    precio: 520,
+    descripcion: "planta para interior luz: Baja a media, riego: 1 vez por semana",
+    imagen: "https://images.pexels.com/photos/5672795/pexels-photo-5672795.jpeg"
   },
   {
     id: 10,
     nombre: "Philodendron Hederaceum",
-    nombreComun: "Filodendro Corazón",
-    luz: "Indirecta media",
-    riego: "Cada 7 días",
-    imagen:
-      "https://images.pexels.com/photos/3854750/pexels-photo-3854750.jpeg",
-  },
+    precio: 390,
+    descripcion: "planta para interior luz: Indirecta media, riego: Cada 7 días",
+    imagen: "https://images.pexels.com/photos/3854750/pexels-photo-3854750.jpeg"
+  }
 ];
 
+// Plantas de exterior
 export const plantasExterior = [
   {
     id: 1,
     nombre: "Lavandula spp.",
-    nombreComun: "Lavanda",
-    luz: "Sol directo",
-    riego: "1 vez cada 1 o 2 semanas",
-    imagen:
-      "https://images.pexels.com/photos/12970054/pexels-photo-12970054.jpeg",
+    precio: 350,
+    descripcion: "planta para exterior luz: Sol directo, riego: 1 vez cada 1 o 2 semanas",
+    imagen: "https://images.pexels.com/photos/12970054/pexels-photo-12970054.jpeg"
   },
   {
     id: 2,
     nombre: "Aloe barbadensis",
-    nombreComun: "Sábila / Aloe Vera",
-    luz: "Sol directo o resolana",
-    riego: "1 vez cada 2 o 3 semanas",
-    imagen:
-      "https://images.pexels.com/photos/34465158/pexels-photo-34465158.jpeg",
+    precio: 400,
+    descripcion: "planta para exterior luz: Sol directo o resolana, riego: 1 vez cada 2 o 3 semanas",
+    imagen: "https://images.pexels.com/photos/34465158/pexels-photo-34465158.jpeg"
   },
   {
     id: 3,
     nombre: "Bougainvillea spp.",
-    nombreComun: "Bugambilia",
-    luz: "Sol directo",
-    riego: "1 o 2 veces por semana",
-    imagen:
-      "https://images.pexels.com/photos/16100361/pexels-photo-16100361.jpeg",
+    precio: 650,
+    descripcion: "planta para exterior luz: Sol directo, riego: 1 o 2 veces por semana",
+    imagen: "https://images.pexels.com/photos/16100361/pexels-photo-16100361.jpeg"
   },
   {
     id: 4,
     nombre: "Citrus x limon",
-    nombreComun: "Limonero / Árbol de Limón",
-    luz: "Sol directo",
-    riego: "2 a 3 veces por semana",
-    imagen:
-      "https://images.pexels.com/photos/36977032/pexels-photo-36977032.jpeg",
+    precio: 750,
+    descripcion: "planta para exterior luz: Sol directo, riego: 2 a 3 veces por semana",
+    imagen: "https://images.pexels.com/photos/36977032/pexels-photo-36977032.jpeg"
   },
-
   {
     id: 5,
     nombre: "Pachypodium lamerei",
-    nombreComun: "Palma de Madagascar",
-    luz: "Sol directo",
-    riego: "1 vez cada 2 o 3 semanas",
-    imagen:
-      "https://images.pexels.com/photos/31964234/pexels-photo-31964234.jpeg",
+    precio: 720,
+    descripcion: "planta para exterior luz: Sol directo, riego: 1 vez cada 2 o 3 semanas",
+    imagen: "https://images.pexels.com/photos/31964234/pexels-photo-31964234.jpeg"
   },
-
   {
     id: 6,
     nombre: "Nephrolepis exaltata",
-    nombreComun: "Helecho",
-    luz: "Sombra o semisombra",
-    riego: "2 a 3 veces por semana",
-    imagen:
-      "https://images.pexels.com/photos/10903254/pexels-photo-10903254.jpeg",
+    precio: 380,
+    descripcion: "planta para exterior luz: Sombra o semisombra, riego: 2 a 3 veces por semana",
+    imagen: "https://images.pexels.com/photos/10903254/pexels-photo-10903254.jpeg"
   },
-
   {
     id: 7,
     nombre: "Spathiphyllum wallisii",
-    nombreComun: "Cuna de Moisés",
-    luz: "Sombra o semisombra",
-    riego: "2 a 3 veces por semana",
-    imagen:
-      "https://images.pexels.com/photos/19404633/pexels-photo-19404633.jpeg",
+    precio: 450,
+    descripcion: "planta para exterior luz: Sombra o semisombra, riego: 2 a 3 veces por semana",
+    imagen: "https://images.pexels.com/photos/19404633/pexels-photo-19404633.jpeg"
   },
   {
     id: 8,
     nombre: "Beaucarnea recurvata",
-    nombreComun: "Pata de Elefante",
-    luz: "Sol o semisombra",
-    riego: "1 vez cada 2 o 3 semanas",
-    imagen:
-      "https://images.pexels.com/photos/30343682/pexels-photo-30343682.jpeg",
+    precio: 750,
+    descripcion: "planta para exterior luz: Sol o semisombra, riego: 1 vez cada 2 o 3 semanas",
+    imagen: "https://images.pexels.com/photos/30343682/pexels-photo-30343682.jpeg"
   },
   {
     id: 9,
     nombre: "Helianthus annuus",
-    nombreComun: "Girasol",
-    luz: "Sol directo",
-    riego: "3 a 4 veces por semana (casi diario en calor)",
-    imagen:
-      "https://images.pexels.com/photos/14876097/pexels-photo-14876097.jpeg",
+    precio: 320,
+    descripcion: "planta para exterior luz: Sol directo, riego: 3 a 4 veces por semana (casi diario en calor)",
+    imagen: "https://images.pexels.com/photos/14876097/pexels-photo-14876097.jpeg"
   },
-
   {
     id: 10,
     nombre: "Jasminum sambac",
-    nombreComun: "Jazmín Árabe",
-    luz: "Sol directo",
-    riego: "2 a 3 veces por semana",
-    imagen:
-      "https://images.pexels.com/photos/37745598/pexels-photo-37745598.jpeg",
-  },
-];
-
-//<<<<<<< HEAD
-//];
-
-//Macetas
-const macetas = [
-    {
-        id: "m001", // Convertido a string
-        nombre: "Cilíndricas", // Comilla cerrada
-        precio: 250,
-        imagen: "https://zuccudesign.com/cdn/shop/products/cilindricamediana1.jpg?v=1674328585",
-        descripcionCorta: "Maceta minimalista con tonos grises o pastel.",
-        descripcionLarga: "Su estética cruda combina perfecto con el verde intenso de plantas como la Monstera o el Ficus Lyrata. Al ser pesadas, le dan una estabilidad increíble a plantas altas."
-    },
-    {
-        id: "m002",
-        nombre: "Cubremacetas",
-        precio: 350,
-            imagen: "https://hersteragarden.com/shop/wp-content/uploads/2023/10/categoria-cubremacetas-orquideas.jpg",
-
-        descripcionCorta: "maceta de cerámica esmaltada (normalmente blanca o negra) que se asienta sobre un soporte de madera de tres o cuatro patas que la eleva del suelo",
-        descripcionLarga: "Es la favorita para poner en las esquinas de las salas de estar o junto al escritorio del jefe."
-    },
-    {
-        id: "m003",
-        nombre: "Plástico con Texturas",
-        precio: 350,
-            imagen: "https://http2.mlstatic.com/D_NQ_NP_702598-MLM109425230926_042026-O.webp",
-
-        descripcionCorta: "Son macetas de plástico de alta calidad que, visualmente, imitan a la perfección otros materiales como el tejido de ratán, la madera o la piedra tallada",
-        descripcionLarga: "Tienen la estética sofisticada de una maceta pesada y costosa, pero con los beneficios del plástico: son superbaratas, ligeras, fáciles de mover y retienen excelente la humedad."
-    },
-    {
-        id: "m004",
-        nombre: "Colgantes",
-        precio: 550,
-            imagen: "https://http2.mlstatic.com/D_NQ_NP_612416-MLM46471454692_062021-O.webp",
-
-        descripcionCorta: "Suelen ser de plástico o resina ligera, vienen con cordones resistentes (o cadenas) para colgar del techo o repisas, e incorporan un pequeño tanque de agua en la base",
-        descripcionLarga: "El diseño vertical está en supertendencia para aprovechar espacios pequeños. Como las plantas colgantes suelen ser difíciles de alcanzar para regar seguido, el sistema de auto-riego te ahorra tener que subirte a una silla cada tres días. Son las compañeras perfectas de los Potos"
-    },
-    {
-        id: "m005",
-        nombre: "Terracota",
-        precio: 350,
-        imagen: "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&width=1946",
-        descripcionCorta: "A pesar de los años y la tecnología, la maceta tradicional de barro color ladrillo sigue estando en el top de ventas a nivel mundial.",
-        descripcionLarga: "Se han vuelto un elemento de culto para los amantes de las plantas de estilo 'vintage' o rústico. Además, los científicos de las plantas y los jardineros expertos las siguen prefiriendo por encima de cualquier otra porque es el material más sano para las raíces de la planta." // 'vintage' corregido
-    }
-];
-
-//Accesorios
-const accesorios = [
-
-    {
-    id: 1,
-    nombre: "Globo autoriego",
-    nombreComun: "Riego automatico",
-    funcion: "Libera agua lentamente",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_L9-wuFoy3qmonWNwS9qaFFWWy1b3xeL6W2CLt26mA&s=10"
-  },
-  {
-    id: 2,
-    nombre: "Atomizadores",
-    nombreComun: "Rociador de agua",
-    funcion: "Para rociar pequeñas cantidades de agua",
-    imagen: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTLAd5a19ZVzCXbYmzLVdJm0aQIXml1kPi-Etwq0msckVzy6U4ZnYuZb31UsAeyJLxd7D8AWrDznCyfBL91lCHyuF-5KCfAblT2oWU7WSssfhDXNgMSfhnXnTP0-8XXeDMwn9qizFY&usqp=CAc"
-  },
-  {
-    id: 3,
-    nombre: "Medidor de humedad",
-    nombreComun: "Medidor de agua",
-    funcion: "Mide el exceso de agua",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gy2ii8yTvaFODC55mHrMAwWk_BYRWdq_c1swxEGXaQ&s=10"
-  },
-  {
-    id: 4,
-    nombre: "Palas de plastico",
-    nombreComun: "Pala",
-    funcion: "Para poder trasladar plantas, quitar tierra, etc.",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUDgjHTNS4SSgMZMHRvfvVbb8rtkjEsR6sif5JgszQg&s=10"
-  },
-
-  {
-    id: 5,
-    nombre: "Maceteros y bases",
-    nombreComun: "Bases para macetas",
-    funcion: "Colocar macetas y tener mejor orden",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY3MwLbp6QEcG5-G4z1HuDYVKkCe8XvbehyxibaxwnFQ&s=10"
-  },
-  
-  {
-    id: 6,
-    nombre: "Soportes y repisas",
-    nombreComun: "Macetero colgante",
-    funcion: "Tener mejor vista de las plantas y soporte para macetas",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRkGIjTWal0heBsaypJ4uxaPBXbVJycHwc5GNZDh_CQ&s=10"
-  },
-  
-  {
-    id: 7,
-    nombre: "Estacas y tutores",
-    nombreComun: "Musgo para plantas",
-    funcion: "Adorno para plantas, y soporte para las ramas",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscmWVXY7yup7_vx9ZB58CbAjBdrAJz-G52ZqqRkCVGg&s"
-  },
-  {
-    id: 8,
-    nombre: "Fertilizante organico",
-    nombreComun: "Nutrientes para plantas",
-    funcion: "Ayuda al crecimiento de plantas, y evita plagas",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzm5sIIkT6djhUDUwoCPKxJhXgYf0UhqraKZaSFqHwuQ&s=10"
-  },
-  {
-    id: 9,
-    nombre: "Kits de tierra",
-    nombreComun: "Tierra preparada",
-    funcion: "Ayuda al crecimiento de las plantas sin fertilizantes quimicos",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDBMThPnWg8c6B8lc20zXnPi2YWzVegWhBinbbRGNBmQ&s=10"
-  },
-  
-  {
-    id: 10,
-    nombre: "Piedras decorativas",
-    nombreComun: "Piedras para decorar",
-    función: "Para dar un acabado limpio y profesional a las macetas",
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EdJ4r5FWSwl7l8h2ExMrJWC0GWoFImmUVqVUCnIbhA&s=10"
+    precio: 480,
+    descripcion: "planta para exterior luz: Sol directo, riego: 2 a 3 veces por semana",
+    imagen: "https://images.pexels.com/photos/37745598/pexels-photo-37745598.jpeg"
   }
-
 ];
-//=======
-//Macetas
+
+// Macetas
 export const macetas = [
   {
-    id: "m001", // Convertido a string
-    nombre: "Cilíndricas", // Comilla cerrada
+    id: "m001",
+    nombre: "Cilíndricas",
     precio: 250,
-    imagen:
-      "https://zuccudesign.com/cdn/shop/products/cilindricamediana1.jpg?v=1674328585",
-    descripcionCorta: "Diseño minimalista de líneas limpias.",
-    descripcionLarga:
-      "Nuestra maceta cilíndrica resalta por su estética moderna y contemporánea. Ideal para plantas de crecimiento vertical como las sansevierias. Cuenta con un excelente acabado que se adapta a cualquier rincón de tu sala u oficina.",
+    descripcion: "Diseño minimalista de líneas limpias. Nuestra maceta cilíndrica resalta por su estética moderna y contemporánea. Ideal para plantas de crecimiento vertical como las sansevierias. Cuenta con un excelente acabado que se adapta a cualquier rincón de tu sala u oficina.",
+    imagen: "https://zuccudesign.com/cdn/shop/products/cilindricamediana1.jpg?v=1674328585"
   },
   {
     id: "m002",
     nombre: "Cubremacetas",
     precio: 350,
-    imagen:
-      "https://hersteragarden.com/shop/wp-content/uploads/2023/10/categoria-cubremacetas-orquideas.jpg",
-    descripcionCorta:
-      "El accesorio perfecto para ocultar la maceta de plástico.",
-    descripcionLarga:
-      "Este cubremacetas está diseñado exclusivamente para dar un toque decorativo instantáneo. No tiene agujero de drenaje, lo que evita filtraciones de agua y protege tus muebles mientras hace lucir tus plantas espectaculares.",
+    descripcion: "El accesorio perfecto para ocultar la maceta de plástico. Este cubremacetas está diseñado exclusivamente para dar un toque decorativo instantáneo. No tiene agujero de drenaje, lo que evita filtraciones de agua y protege tus muebles mientras hace lucir tus plantas espectaculares.",
+    imagen: "https://hersteragarden.com/shop/wp-content/uploads/2023/10/categoria-cubremacetas-orquideas.jpg"
   },
   {
     id: "m003",
     nombre: "Plástico con Texturas",
     precio: 350,
-    imagen:
-      "https://http2.mlstatic.com/D_NQ_NP_702598-MLM109425230926_042026-O.webp",
-descripcionCorta: "Ligera, resistente y con un relieve único.",
-    descripcionLarga: "Fabricada con polímeros de alta resistencia, esta maceta combina la ligereza del plástico con un acabado texturizado premium que imita materiales artesanales. Es duradera, fácil de limpiar y perfecta tanto para interiores como exteriores."
+    descripcion: "Ligera, resistente y con un relieve único. Fabricada con polímeros de alta resistencia, esta maceta combina la ligereza del plástico con un acabado texturizado premium que imita materiales artesanales. Es duradera, fácil de limpiar y perfecta tanto para interiores como exteriores.",
+    imagen: "https://http2.mlstatic.com/D_NQ_NP_702598-MLM109425230926_042026-O.webp"
   },
   {
     id: "m004",
     nombre: "Colgantes",
     precio: 550,
-    imagen:
-      "https://http2.mlstatic.com/D_NQ_NP_612416-MLM46471454692_062021-O.webp",
-
-    descripcionCorta: "Ideal para plantas colgantes y espacios reducidos.",
-    descripcionLarga: "Aprovecha la altura de tu hogar con esta maceta colgante. Incluye un sistema de soporte seguro y resistente, ideal para lucir plantas tipo teléfono (pothos), listones o suculentas colgantes, dándole dinamismo a tus paredes o balcones."
+    descripcion: "Ideal para plantas colgantes y espacios reducidos. Aprovecha la altura de tu hogar con esta maceta colgante. Incluye un sistema de soporte seguro y resistente, ideal para lucir plantas tipo teléfono (pothos), listones o suculentas colgantes, dándole dinamismo a tus paredes o balcones.",
+    imagen: "https://http2.mlstatic.com/D_NQ_NP_612416-MLM46471454692_062021-O.webp"
   },
   {
     id: "m005",
     nombre: "Terracota",
     precio: 350,
-    imagen:
-      "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&width=1946",
-    descripcionCorta: "Arcilla clásica y porosa para una óptima salud radicular.",
-    descripcionLarga: "La maceta de terracota tradicional es la favorita de los expertos en plantas. Su material poroso permite que la tierra 'respire' y el exceso de humedad se evapore fácilmente, previniendo eficazmente la pudrición de las raíces."
-  },
+    descripcion: "Arcilla clásica y porosa para una óptima salud radicular. La maceta de terracota tradicional es la favorita de los expertos en plantas. Su material poroso permite que la tierra 'respire' y el exceso de humedad se evapore fácilmente, previniendo eficazmente la pudrición de las raíces.",
+    imagen: "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&width=1946"
+  }
 ];
-//>>>>>>> origin/karlaElizabethGonzalez
+
+// Accesorios
+export const accesorios = [
+  {
+    id: 1,
+    nombre: "Globo autoriego",
+    precio: 550,
+    descripcion: "Accesorio de riego automático. Función: Libera agua lentamente",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_L9-wuFoy3qmonWNwS9qaFFWWy1b3xeL6W2CLt26mA&s=10"
+  },
+  {
+    id: 2,
+    nombre: "Atomizadores",
+    precio: 350,
+    descripcion: "Accesorio rociador de agua. Función: Para rociar pequeñas cantidades de agua",
+    imagen: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTLAd5a19ZVzCXbYmzLVdJm0aQIXml1kPi-Etwq0msckVzy6U4ZnYuZb31UsAeyJLxd7D8AWrDznCyfBL91lCHyuF-5KCfAblT2oWU7WSssfhDXNgMSfhnXnTP0-8XXeDMwn9qizFY&usqp=CAc"
+  },
+  {
+    id: 3,
+    nombre: "Medidor de humedad",
+    precio: 750,
+    descripcion: "Accesorio medidor de agua. Función: Mide el exceso de agua",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gy2ii8yTvaFODC55mHrMAwWk_BYRWdq_c1swxEGXaQ&s=10"
+  },
+  {
+    id: 4,
+    nombre: "Palas de plastico",
+    precio: 250,
+    descripcion: "Herramienta tipo pala. Función: Para poder trasladar plantas, quitar tierra, etc.",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUDgjHTNS4SSgMZMHRvfvVbb8rtkjEsR6sif5JgszQg&s=10"
+  },
+  {
+    id: 5,
+    nombre: "Maceteros y bases",
+    precio: 1550,
+    descripcion: "Bases para macetas. Función: Colocar macetas y tener mejor orden",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY3MwLbp6QEcG5-G4z1HuDYVKkCe8XvbehyxibaxwnFQ&s=10"
+  },
+  {
+    id: 6,
+    nombre: "Soportes y repisas",
+    precio: 1450,
+    descripcion: "Macetero colgante. Función: Tener mejor vista de las plantas y soporte para macetas",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRkGIjTWal0heBsaypJ4uxaPBXbVJycHwc5GNZDh_CQ&s=10"
+  },
+  {
+    id: 7,
+    nombre: "Estacas y tutores",
+    precio: 250,
+    descripcion: "Musgo para plantas. Función: Adorno para plantas, y soporte para las ramas",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscmWVXY7yup7_vx9ZB58CbAjBdrAJz-G52ZqqRkCVGg&s"
+  },
+  {
+    id: 8,
+    nombre: "Fertilizante organico",
+    precio: 450,
+    descripcion: "Nutrientes para plantas. Función: Ayuda al crecimiento de plantas, y evita plagas",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzm5sIIkT6djhUDUwoCPKxJhXgYf0UhqraKZaSFqHwuQ&s=10"
+  },
+  {
+    id: 9,
+    nombre: "Kits de tierra",
+    precio: 850,
+    descripcion: "Tierra preparada. Función: Ayuda al crecimiento de las plantas sin fertilizantes quimicos",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDBMThPnWg8c6B8lc20zXnPi2YWzVegWhBinbbRGNBmQ&s=10"
+  },
+  {
+    id: 10,
+    nombre: "Piedras decorativas",
+    precio: 650,
+    descripcion: "Piedras para decorar. Función: Para dar un acabado limpio y profesional a las macetas",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EdJ4r5FWSwl7l8h2ExMrJWC0GWoFImmUVqVUCnIbhA&s=10"
+  }
+];
