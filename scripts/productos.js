@@ -247,6 +247,7 @@ const accesorios = [
     id: 1,
     nombre: "Globo autoriego",
     nombreComun: "Riego automatico",
+    precio: 550,
     funcion: "Libera agua lentamente",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_L9-wuFoy3qmonWNwS9qaFFWWy1b3xeL6W2CLt26mA&s=10"
   },
@@ -254,6 +255,7 @@ const accesorios = [
     id: 2,
     nombre: "Atomizadores",
     nombreComun: "Rociador de agua",
+    precio: 350,
     funcion: "Para rociar pequeñas cantidades de agua",
     imagen: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTLAd5a19ZVzCXbYmzLVdJm0aQIXml1kPi-Etwq0msckVzy6U4ZnYuZb31UsAeyJLxd7D8AWrDznCyfBL91lCHyuF-5KCfAblT2oWU7WSssfhDXNgMSfhnXnTP0-8XXeDMwn9qizFY&usqp=CAc"
   },
@@ -261,6 +263,7 @@ const accesorios = [
     id: 3,
     nombre: "Medidor de humedad",
     nombreComun: "Medidor de agua",
+    precio: 750,
     funcion: "Mide el exceso de agua",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gy2ii8yTvaFODC55mHrMAwWk_BYRWdq_c1swxEGXaQ&s=10"
   },
@@ -268,6 +271,7 @@ const accesorios = [
     id: 4,
     nombre: "Palas de plastico",
     nombreComun: "Pala",
+    precio: 250,
     funcion: "Para poder trasladar plantas, quitar tierra, etc.",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUDgjHTNS4SSgMZMHRvfvVbb8rtkjEsR6sif5JgszQg&s=10"
   },
@@ -276,6 +280,7 @@ const accesorios = [
     id: 5,
     nombre: "Maceteros y bases",
     nombreComun: "Bases para macetas",
+    precio: 1,550,
     funcion: "Colocar macetas y tener mejor orden",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY3MwLbp6QEcG5-G4z1HuDYVKkCe8XvbehyxibaxwnFQ&s=10"
   },
@@ -284,6 +289,7 @@ const accesorios = [
     id: 6,
     nombre: "Soportes y repisas",
     nombreComun: "Macetero colgante",
+    precio: 1,450,
     funcion: "Tener mejor vista de las plantas y soporte para macetas",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRkGIjTWal0heBsaypJ4uxaPBXbVJycHwc5GNZDh_CQ&s=10"
   },
@@ -292,6 +298,7 @@ const accesorios = [
     id: 7,
     nombre: "Estacas y tutores",
     nombreComun: "Musgo para plantas",
+    precio: 250,
     funcion: "Adorno para plantas, y soporte para las ramas",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscmWVXY7yup7_vx9ZB58CbAjBdrAJz-G52ZqqRkCVGg&s"
   },
@@ -299,6 +306,7 @@ const accesorios = [
     id: 8,
     nombre: "Fertilizante organico",
     nombreComun: "Nutrientes para plantas",
+    precio: 450,
     funcion: "Ayuda al crecimiento de plantas, y evita plagas",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzm5sIIkT6djhUDUwoCPKxJhXgYf0UhqraKZaSFqHwuQ&s=10"
   },
@@ -306,6 +314,7 @@ const accesorios = [
     id: 9,
     nombre: "Kits de tierra",
     nombreComun: "Tierra preparada",
+    precio: 850,
     funcion: "Ayuda al crecimiento de las plantas sin fertilizantes quimicos",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDBMThPnWg8c6B8lc20zXnPi2YWzVegWhBinbbRGNBmQ&s=10"
   },
@@ -314,6 +323,7 @@ const accesorios = [
     id: 10,
     nombre: "Piedras decorativas",
     nombreComun: "Piedras para decorar",
+    precio: 650,
     función: "Para dar un acabado limpio y profesional a las macetas",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EdJ4r5FWSwl7l8h2ExMrJWC0GWoFImmUVqVUCnIbhA&s=10"
   }
