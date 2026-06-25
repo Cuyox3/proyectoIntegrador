@@ -23,11 +23,11 @@ function cargarTarjetas(arregloPlantas) {
       const tarjetaHtml = `
                 <div class="col-3 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombreComun}" style="height: 250px; object-fit: cover; border-radius: 20px;">
+                        <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
                         
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-truncate" title="${planta.nombreComun}">
-                                ${planta.nombreComun}
+                            <h5 class="card-title text-truncate" title="${planta.nombre}">
+                                ${planta.nombre}
                             </h5>
                             
                             <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate" title="${planta.nombre}">
@@ -35,10 +35,10 @@ function cargarTarjetas(arregloPlantas) {
                             </h6>
                             
                             <p class="card-text small mb-1">
-                                <strong>Luz:</strong> ${planta.luz}
+                                <strong>Precio:</strong> $${planta.precio}
                             </p>
                             <p class="card-text small mb-3">
-                                <strong>Riego:</strong> ${planta.riego}
+                                <strong>Descripción:</strong> ${planta.descripcion}
                             </p>
                             
                             
@@ -77,10 +77,10 @@ export function cargarTarjetasMacetas(arregloMacetas) {
                             </p>
                             
                             <p class="card-text small mb-1">
-                                ${maceta.descripcionCorta}
+                                ${maceta.descripcion}
                             </p>
                             <p class="card-text small mb-3 text-muted">
-                                ${maceta.descripcionLarga}
+                                ${maceta.descripcion}
                             </p>
                             
                             
@@ -119,10 +119,10 @@ export function cargarTarjetasSuculentas(arregloSuculentas) {
                             </p>
                             
                             <p class="card-text small mb-1">
-                                ${suculenta.descripcionCorta}
+                                ${suculenta.descripcion}
                             </p>
                             <p class="card-text small mb-3 text-muted">
-                                ${suculenta.descripcionLarga}
+                                ${suculenta.descripcion}
                             </p>
                             
                             
@@ -161,10 +161,10 @@ export function cargarTarjetasCactus(arregloCactus) {
                             </p>
                             
                             <p class="card-text small mb-1">
-                                ${cactus.descripcionCorta}
+                                ${cactus.descripcion}
                             </p>
                             <p class="card-text small mb-3 text-muted">
-                                ${cactus.descripcionLarga}
+                                ${cactus.descripcion}
                             </p>
                             
                             
@@ -198,12 +198,16 @@ export function cargarTarjetasAccesorios(arregloAccesorios) {
                                 ${accesorio.nombre}
                             </h5>
                             
-                            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate" title="${accesorio.nombreComun}">
-                                ${accesorio.nombreComun}
+                            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate" title="${accesorio.nombre}">
+                                ${accesorio.nombre}
                             </h6>
-                            
+
                             <p class="card-text small mb-1">
-                                <strong>Función:</strong> ${accesorio.funcion}
+                                <strong>Precio:</strong> $${accesorio.precio}
+                            </p>
+
+                            <p class="card-text small mb-1">
+                                <strong>Descripción:</strong> ${accesorio.descripcion}
                             </p>
                             
                             
@@ -229,12 +233,12 @@ function cargarTodos() {
     contenedorFila.insertAdjacentHTML("beforeend", `
       <div class="col-3 mb-4">
         <div class="card h-100 shadow-sm">
-          <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombreComun}" style="height: 250px; object-fit: cover; border-radius: 20px;">
+          <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-truncate" title="${planta.nombreComun}">${planta.nombreComun}</h5>
+            <h5 class="card-title text-truncate" title="${planta.nombre}">${planta.nombre}</h5>
             <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate">${planta.nombre}</h6>
-            <p class="card-text small mb-1"><strong>Luz:</strong> ${planta.luz}</p>
-            <p class="card-text small mb-3"><strong>Riego:</strong> ${planta.riego}</p>
+            <p class="card-text small mb-1"><strong>Descripcion:</strong> ${planta.descripcion}</p>
+            <p class="card-text small mb-3"><strong>Precio:</strong> ${planta.precio}</p>
             <button class="btn btn-success mt-auto">Comprar</button>
           </div>
         </div>
@@ -245,12 +249,12 @@ function cargarTodos() {
     contenedorFila.insertAdjacentHTML("beforeend", `
       <div class="col-3 mb-4">
         <div class="card h-100 shadow-sm">
-          <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombreComun}" style="height: 250px; object-fit: cover; border-radius: 20px;">
+          <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-truncate" title="${planta.nombreComun}">${planta.nombreComun}</h5>
+            <h5 class="card-title text-truncate" title="${planta.nombre}">${planta.nombre}</h5>
             <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate">${planta.nombre}</h6>
-            <p class="card-text small mb-1"><strong>Luz:</strong> ${planta.luz}</p>
-            <p class="card-text small mb-3"><strong>Riego:</strong> ${planta.riego}</p>
+            <p class="card-text small mb-1"><strong>Descripcion:</strong> ${planta.descripcion}</p>
+            <p class="card-text small mb-3"><strong>Precio:</strong> ${planta.precio}</p>
             <button class="btn btn-success mt-auto">Comprar</button>
           </div>
         </div>
@@ -265,8 +269,8 @@ function cargarTodos() {
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-truncate" title="${maceta.nombre}">${maceta.nombre}</h5>
             <p class="text-success fw-bold fs-5 mb-2">$${maceta.precio}</p>
-            <p class="card-text small mb-1">${maceta.descripcionCorta}</p>
-            <p class="card-text small mb-3 text-muted">${maceta.descripcionLarga}</p>
+            <p class="card-text small mb-1">${maceta.descripcion}</p>
+            <p class="card-text small mb-3 text-muted">${maceta.descripcion}</p>
             <button class="btn btn-success mt-auto">Comprar</button>
           </div>
         </div>
@@ -281,8 +285,8 @@ function cargarTodos() {
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-truncate" title="${suculenta.nombre}">${suculenta.nombre}</h5>
             <p class="text-success fw-bold fs-5 mb-2">$${suculenta.precio}</p>
-            <p class="card-text small mb-1">${suculenta.descripcionCorta}</p>
-            <p class="card-text small mb-3 text-muted">${suculenta.descripcionLarga}</p>
+            <p class="card-text small mb-1">${suculenta.descripcion}</p>
+            <p class="card-text small mb-3 text-muted">${suculenta.descripcion}</p>
             <button class="btn btn-success mt-auto">Comprar</button>
           </div>
         </div>
@@ -297,8 +301,8 @@ function cargarTodos() {
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-truncate" title="${c.nombre}">${c.nombre}</h5>
             <p class="text-success fw-bold fs-5 mb-2">$${c.precio}</p>
-            <p class="card-text small mb-1">${c.descripcionCorta}</p>
-            <p class="card-text small mb-3 text-muted">${c.descripcionLarga}</p>
+            <p class="card-text small mb-1">${c.descripcion}</p>
+            <p class="card-text small mb-3 text-muted">${c.descripcion}</p>
             <button class="btn btn-success mt-auto">Comprar</button>
           </div>
         </div>
@@ -312,8 +316,9 @@ function cargarTodos() {
           <img src="${accesorio.imagen}" class="card-img-top p-3" alt="${accesorio.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-truncate" title="${accesorio.nombre}">${accesorio.nombre}</h5>
-            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate">${accesorio.nombreComun}</h6>
-            <p class="card-text small mb-1"><strong>Función:</strong> ${accesorio.funcion}</p>
+            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate">${accesorio.nombre}</h6>
+            <p class="card-text small mb-1"><strong>Función:</strong> ${accesorio.descripcion}</p>
+            <p class="card-text small mb-3 text-muted"><strong>Precio:</strong> $${accesorio.precio}</p>
             <button class="btn btn-success mt-auto">Comprar</button>
           </div>
         </div>
