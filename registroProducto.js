@@ -2,7 +2,8 @@
  * Green-Nova - Registro de Productos
 
  */
-let productos = []; // Crea un arreglo vacío donde se guardarán los productos
+ //const productos = []; // Crea un arreglo vacío donde se guardarán los productos
+ const productos=JSON.parse(localStorage.getItem("productoNuevo"))||[];
 
 let idActual = 1; // Crea una variable para manejar el id autoincrementable
 
@@ -84,7 +85,8 @@ function guardarProducto() { // Función que valida y guarda el producto
         nombreProducto: nombreProducto,// Guarda el nombre
         tipoProducto: tipoProducto, // Guarda el tipo de producto
         precioProducto: Number(precioProducto),// Convierte el precio a número y lo guarda
-        imagen: imagen.files[0].name, // Guarda la imagen
+        //imagen: imagen.files[0].name, // Guarda la imagen
+        imagen: imagen.files[0]?.name||"sin-imagen.jpg",//se pone validacion si no sube imagen
         luz: luz,
         riego: riego,
         funcion: funcion,
@@ -92,10 +94,10 @@ function guardarProducto() { // Función que valida y guarda el producto
     }; // Fin del objeto producto
 
     productos.push(producto); // Agrega el producto al arreglo de productos
-
+    localStorage.setItem("productoNuevo",JSON.stringify(productos))
     idActual++; // Incrementa el id para el siguiente producto
 
-    document.getElementById("resultadoJSON").textContent = JSON.stringify(productos, null, 4); // Muestra el arreglo como JSON ordenado
+   // document.getElementById("resultadoJSON").textContent = JSON.stringify(productos, null, 4); // Muestra el arreglo como JSON ordenado
 
     mostrarAlerta("Producto guardado correctamente.", "success"); // Muestra alerta de éxito
 
