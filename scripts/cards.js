@@ -1,7 +1,6 @@
 import { plantasExterior, plantasInterior, macetas, accesorios, suculentas, cactus } from "./productos.js";
 
 
-// Obtener los elementos del DOM
 const contenedorFila = document.getElementById("prodRow");
 const exteriorBtn = document.getElementById("exteriorBtn");
 const interiorBtn = document.getElementById("interiorBtn");
@@ -13,332 +12,71 @@ const todosBtn = document.getElementById("todosBtn");
 
 const botonesFiltro = document.querySelectorAll(".btn-filtro");
 
-//Funcion para cargar tarjetas de plantas
-function cargarTarjetas(arregloPlantas) {
-  contenedorFila.innerHTML = ""; // Limpiamos el contenedor
+// funcion para renderizar cualquier tipo de producto
+function renderizarTarjetas(arregloProductos, mensajeVacio = "No hay productos disponibles.") {
+    contenedorFila.innerHTML = ""; 
 
-  // Verificamos que el arreglo exista y tenga elementos
-  if (arregloPlantas && arregloPlantas.length > 0) {
-    arregloPlantas.forEach((planta) => {
-      const tarjetaHtml = `
-                <div class="col-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombreComun}" style="height: 250px; object-fit: cover; border-radius: 20px;">
+    if (arregloProductos && arregloProductos.length > 0) {
+        const tarjetasHtml = arregloProductos.map(producto => `
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="${producto.imagen}" class="card-img-top p-3" alt="${producto.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
+                    
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-truncate" title="${producto.nombre}">
+                            ${producto.nombre}
+                        </h5>
                         
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-truncate" title="${planta.nombreComun}">
-                                ${planta.nombreComun}
-                            </h5>
-                            
-                            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate" title="${planta.nombre}">
-                                ${planta.nombre}
-                            </h6>
-                            
-                            <p class="card-text small mb-1">
-                                <strong>Luz:</strong> ${planta.luz}
-                            </p>
-                            <p class="card-text small mb-3">
-                                <strong>Riego:</strong> ${planta.riego}
-                            </p>
-                            
-                            
-                            <button class="btn btn-success mt-auto">Comprar</button>
-                        </div>
+                        <p class="text-success fw-bold fs-5 mb-2">
+                            $${producto.precio || '0.00'}
+                        </p>
+                        
+                        <p class="card-text small mb-3 text-muted">
+                            ${producto.descripcion || 'Sin descripción disponible.'}
+                        </p>
+                        
+                        <button class="btn btn-success mt-auto">Comprar</button>
                     </div>
                 </div>
-            `;
-      contenedorFila.insertAdjacentHTML("beforeend", tarjetaHtml);
-    });
-  } else {
-    contenedorFila.innerHTML =
-      "<p class='text-center'>No hay plantas disponibles en este momento.</p>";
-  }
-}
-//--------------------------------------------------
-//Funcion para cargar tarjetas de macetas
-export function cargarTarjetasMacetas(arregloMacetas) {
-  contenedorFila.innerHTML = ""; // Limpiamos el contenedor
+            </div>
+        `).join("");
 
-  // Verificamos que el arreglo exista y tenga elementos
-  if (arregloMacetas && arregloMacetas.length > 0) {
-    arregloMacetas.forEach((maceta) => {
-      const tarjetaHtml = `
-                <div class="col-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="${maceta.imagen}" class="card-img-top p-3" alt="${maceta.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-                        
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-truncate" title="${maceta.nombre}">
-                                ${maceta.nombre}
-                            </h5>
-                            
-                            <p class="text-success fw-bold fs-5 mb-2">
-                                $${maceta.precio}
-                            </p>
-                            
-                            <p class="card-text small mb-1">
-                                ${maceta.descripcionCorta}
-                            </p>
-                            <p class="card-text small mb-3 text-muted">
-                                ${maceta.descripcionLarga}
-                            </p>
-                            
-                            
-                            <button class="btn btn-success mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-      contenedorFila.insertAdjacentHTML("beforeend", tarjetaHtml);
-    });
-  } else {
-    contenedorFila.innerHTML =
-      "<p class='text-center'>No hay macetas disponibles en este momento.</p>";
-  }
+        contenedorFila.innerHTML = tarjetasHtml;
+    } else {
+        contenedorFila.innerHTML = `<p class='text-center'>${mensajeVacio}</p>`;
+    }
 }
-//--------------------------------------------------
-//Funcion para cargar tarjetas de suculentas
-export function cargarTarjetasSuculentas(arregloSuculentas) {
-  contenedorFila.innerHTML = ""; // Limpiamos el contenedor
 
-  // Verificamos que el arreglo exista y tenga elementos
-  if (arregloSuculentas && arregloSuculentas.length > 0) {
-    arregloSuculentas.forEach((suculenta) => {
-      const tarjetaHtml = `
-                <div class="col-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="${suculenta.imagen}" class="card-img-top p-3" alt="${suculenta.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-                        
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-truncate" title="${suculenta.nombre}">
-                                ${suculenta.nombre}
-                            </h5>
-                            
-                            <p class="text-success fw-bold fs-5 mb-2">
-                                $${suculenta.precio}
-                            </p>
-                            
-                            <p class="card-text small mb-1">
-                                ${suculenta.descripcionCorta}
-                            </p>
-                            <p class="card-text small mb-3 text-muted">
-                                ${suculenta.descripcionLarga}
-                            </p>
-                            
-                            
-                            <button class="btn btn-success mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-      contenedorFila.insertAdjacentHTML("beforeend", tarjetaHtml);
-    });
-  } else {
-    contenedorFila.innerHTML =
-      "<p class='text-center'>No hay suculentas disponibles en este momento.</p>";
-  }
-}
-//--------------------------------------------------
-//Funcion para cargar tarjetas de cactus
-export function cargarTarjetasCactus(arregloCactus) {
-  contenedorFila.innerHTML = ""; // Limpiamos el contenedor
-
-  // Verificamos que el arreglo exista y tenga elementos
-  if (arregloCactus && arregloCactus.length > 0) {
-    arregloCactus.forEach((cactus) => {
-      const tarjetaHtml = `
-                <div class="col-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="${cactus.imagen}" class="card-img-top p-3" alt="${cactus.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-                        
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-truncate" title="${cactus.nombre}">
-                                ${cactus.nombre}
-                            </h5>
-                            
-                            <p class="text-success fw-bold fs-5 mb-2">
-                                $${cactus.precio}
-                            </p>
-                            
-                            <p class="card-text small mb-1">
-                                ${cactus.descripcionCorta}
-                            </p>
-                            <p class="card-text small mb-3 text-muted">
-                                ${cactus.descripcionLarga}
-                            </p>
-                            
-                            
-                            <button class="btn btn-success mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-      contenedorFila.insertAdjacentHTML("beforeend", tarjetaHtml);
-    });
-  } else {
-    contenedorFila.innerHTML =
-      "<p class='text-center'>No hay cactus disponibles en este momento.</p>";
-  }
-}
-//--------------------------------------------------
-//Funcion para cargar tarjetas de accesorios
-export function cargarTarjetasAccesorios(arregloAccesorios) {
-  contenedorFila.innerHTML = ""; // Limpiamos el contenedor
-
-  // Verificamos que el arreglo exista y tenga elementos
-  if (arregloAccesorios && arregloAccesorios.length > 0) {
-    arregloAccesorios.forEach((accesorio) => {
-      const tarjetaHtml = `
-                <div class="col-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="${accesorio.imagen}" class="card-img-top p-3" alt="${accesorio.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-                        
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-truncate" title="${accesorio.nombre}">
-                                ${accesorio.nombre}
-                            </h5>
-                            
-                            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate" title="${accesorio.nombreComun}">
-                                ${accesorio.nombreComun}
-                            </h6>
-                            
-                            <p class="card-text small mb-1">
-                                <strong>Función:</strong> ${accesorio.funcion}
-                            </p>
-                            
-                            
-                            <button class="btn btn-success mt-auto">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-      contenedorFila.insertAdjacentHTML("beforeend", tarjetaHtml);
-    });
-  } else {
-    contenedorFila.innerHTML =
-      "<p class='text-center'>No hay accesorios disponibles en este momento.</p>";
-  }
-}
-//--------------------------------------------------
-
-// --- Configuración de los botones  ---
+// función para cargar todos los productos unidos
 function cargarTodos() {
-  contenedorFila.innerHTML = "";
-
-  plantasInterior.forEach((planta) => {
-    contenedorFila.insertAdjacentHTML("beforeend", `
-      <div class="col-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombreComun}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-truncate" title="${planta.nombreComun}">${planta.nombreComun}</h5>
-            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate">${planta.nombre}</h6>
-            <p class="card-text small mb-1"><strong>Luz:</strong> ${planta.luz}</p>
-            <p class="card-text small mb-3"><strong>Riego:</strong> ${planta.riego}</p>
-            <button class="btn btn-success mt-auto">Comprar</button>
-          </div>
-        </div>
-      </div>`);
-  });
-
-  plantasExterior.forEach((planta) => {
-    contenedorFila.insertAdjacentHTML("beforeend", `
-      <div class="col-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="${planta.imagen}" class="card-img-top p-3" alt="${planta.nombreComun}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-truncate" title="${planta.nombreComun}">${planta.nombreComun}</h5>
-            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate">${planta.nombre}</h6>
-            <p class="card-text small mb-1"><strong>Luz:</strong> ${planta.luz}</p>
-            <p class="card-text small mb-3"><strong>Riego:</strong> ${planta.riego}</p>
-            <button class="btn btn-success mt-auto">Comprar</button>
-          </div>
-        </div>
-      </div>`);
-  });
-
-  macetas.forEach((maceta) => {
-    contenedorFila.insertAdjacentHTML("beforeend", `
-      <div class="col-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="${maceta.imagen}" class="card-img-top p-3" alt="${maceta.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-truncate" title="${maceta.nombre}">${maceta.nombre}</h5>
-            <p class="text-success fw-bold fs-5 mb-2">$${maceta.precio}</p>
-            <p class="card-text small mb-1">${maceta.descripcionCorta}</p>
-            <p class="card-text small mb-3 text-muted">${maceta.descripcionLarga}</p>
-            <button class="btn btn-success mt-auto">Comprar</button>
-          </div>
-        </div>
-      </div>`);
-  });
-
-  suculentas.forEach((suculenta) => {
-    contenedorFila.insertAdjacentHTML("beforeend", `
-      <div class="col-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="${suculenta.imagen}" class="card-img-top p-3" alt="${suculenta.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-truncate" title="${suculenta.nombre}">${suculenta.nombre}</h5>
-            <p class="text-success fw-bold fs-5 mb-2">$${suculenta.precio}</p>
-            <p class="card-text small mb-1">${suculenta.descripcionCorta}</p>
-            <p class="card-text small mb-3 text-muted">${suculenta.descripcionLarga}</p>
-            <button class="btn btn-success mt-auto">Comprar</button>
-          </div>
-        </div>
-      </div>`);
-  });
-
-  cactus.forEach((c) => {
-    contenedorFila.insertAdjacentHTML("beforeend", `
-      <div class="col-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="${c.imagen}" class="card-img-top p-3" alt="${c.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-truncate" title="${c.nombre}">${c.nombre}</h5>
-            <p class="text-success fw-bold fs-5 mb-2">$${c.precio}</p>
-            <p class="card-text small mb-1">${c.descripcionCorta}</p>
-            <p class="card-text small mb-3 text-muted">${c.descripcionLarga}</p>
-            <button class="btn btn-success mt-auto">Comprar</button>
-          </div>
-        </div>
-      </div>`);
-  });
-
-  accesorios.forEach((accesorio) => {
-    contenedorFila.insertAdjacentHTML("beforeend", `
-      <div class="col-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="${accesorio.imagen}" class="card-img-top p-3" alt="${accesorio.nombre}" style="height: 250px; object-fit: cover; border-radius: 20px;">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title text-truncate" title="${accesorio.nombre}">${accesorio.nombre}</h5>
-            <h6 class="card-subtitle mb-3 text-muted fst-italic text-truncate">${accesorio.nombreComun}</h6>
-            <p class="card-text small mb-1"><strong>Función:</strong> ${accesorio.funcion}</p>
-            <button class="btn btn-success mt-auto">Comprar</button>
-          </div>
-        </div>
-      </div>`);
-  });
+    //   usamos spread operator para unir todos los arreglos
+    const todosLosProductos = [
+        ...plantasInterior, 
+        ...plantasExterior, 
+        ...macetas, 
+        ...suculentas, 
+        ...cactus, 
+        ...accesorios
+    ];
+    renderizarTarjetas(todosLosProductos, "No hay productos en la tienda en este momento.");
 }
 
+// asignar Event Listeners 
+todosBtn?.addEventListener("click", cargarTodos);
+interiorBtn?.addEventListener("click", () => renderizarTarjetas(plantasInterior, "No hay plantas de interior."));
+exteriorBtn?.addEventListener("click", () => renderizarTarjetas(plantasExterior, "No hay plantas de exterior."));
+macetasBtn?.addEventListener("click", () => renderizarTarjetas(macetas, "No hay macetas disponibles."));
+suculentasBtn?.addEventListener("click", () => renderizarTarjetas(suculentas, "No hay suculentas disponibles."));
+cactusBtn?.addEventListener("click", () => renderizarTarjetas(cactus, "No hay cactus disponibles."));
+accesoriosBtn?.addEventListener("click", () => renderizarTarjetas(accesorios, "No hay accesorios disponibles."));
 
-
-
-todosBtn.addEventListener("click", cargarTodos);
-interiorBtn.addEventListener("click", () => cargarTarjetas(plantasInterior));
-exteriorBtn.addEventListener("click", () => cargarTarjetas(plantasExterior));
-macetasBtn.addEventListener("click", () => cargarTarjetasMacetas(macetas));
-suculentasBtn.addEventListener("click", () => cargarTarjetasSuculentas(suculentas));
-cactusBtn.addEventListener("click", () => cargarTarjetasCactus(cactus));
-accesoriosBtn.addEventListener("click", () => cargarTarjetasAccesorios(accesorios));
-//------------------------------------------------------------
-
-// Lógica visual de los botones activos (Clases Bootstrap)
+//  visual de los botones activos
 botonesFiltro.forEach((boton) => {
-  boton.addEventListener("click", function () {
-    botonesFiltro.forEach((btn) => btn.classList.remove("active"));
-
-    this.classList.add("active");
-  });
+    boton.addEventListener("click", function () {
+        botonesFiltro.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+    });
 });
-//--------------------------------------------------
+
+
+cargarTodos();

@@ -259,3 +259,79 @@ export const accesorios = [
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EdJ4r5FWSwl7l8h2ExMrJWC0GWoFImmUVqVUCnIbhA&s=10"
   }
 ];
+
+export const suculentas = [
+  {
+    id: 1,
+    nombre: "Echeveria Perlevon",
+    precio: 150,
+    descripcion: "suculenta luz: Sol directo o indirecto brillante, riego: 1 vez cada 2 semanas",
+    imagen: "https://images.pexels.com/photos/1903965/pexels-photo-1903965.jpeg"
+  },
+  {
+    id: 2,
+    nombre: "Sempervivum Tectorum",
+    precio: 120,
+    descripcion: "suculenta luz: Sol directo, riego: 1 vez cada 3 semanas",
+    imagen: "https://images.pexels.com/photos/1382396/pexels-photo-1382396.jpeg"
+  },
+  {
+    id: 3,
+    nombre: "Sedum Morganianum",
+    precio: 180,
+    descripcion: "suculenta luz: Indirecta brillante, riego: 1 vez cada 10 a 14 días",
+    imagen: "https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg"
+  },
+  {
+    id: 4,
+    nombre: "Crassula Ovata 'Gollum'",
+    precio: 200,
+    descripcion: "suculenta luz: Sol directo o resolana, riego: 1 vez cada 2 semanas",
+    imagen: "https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg"
+  },
+  {
+    id: 5,
+    nombre: "Kalanchoe Thyrisflora",
+    precio: 150,
+    descripcion: "suculenta luz: Sol directo o indirecto brillante, riego: 1 vez cada 2 semanas",
+    imagen: "https://images.pexels.com/photos/1006293/pexels-photo-1006293.jpeg"
+  }
+];
+
+export const cactus = [
+  {
+    id: 1,
+    nombre: "Opuntia Microdasys",
+    precio: 120,
+    descripcion: "cactus luz: Sol directo, riego: 1 vez cada 3 semanas",
+    imagen: "https://images.pexels.com/photos/2132240/pexels-photo-2132240.jpeg"
+  },
+  {
+    id: 2,
+    nombre: "Echinocactus Grusonii",
+    precio: 250,
+    descripcion: "cactus luz: Sol directo, riego: 1 vez al mes",
+    imagen: "https://images.pexels.com/photos/4622977/pexels-photo-4622977.jpeg"
+  },
+  {
+    id: 3,
+    nombre: "Mammillaria Hahniana",
+    precio: 140,
+    descripcion: "cactus luz: Sol directo, riego: 1 vez al mes",
+    imagen: "https://images.pexels.com/photos/3645055/pexels-photo-3645055.jpeg"
+  },
+  {
+    id: 4,
+    nombre: "Ferocactus Glaucescens",
+    precio: 180,
+    descripcion: "cactus luz: Sol directo, riego: 1 vez al mes",
+    imagen: "https://images.pexels.com/photos/1382394/pexels-photo-1382394.jpeg"
+  },
+  {
+    id: 5,
+    nombre: "Gymnocalycium Mihanovichii",
+    precio: 160,
+    descripcion: "cactus luz: Indirecta brillante, riego: 1 vez cada 3 semanas",
+    imagen: "https://images.pexels.com/photos/2306562/pexels-photo-2306562.jpeg"
+  }
+];
