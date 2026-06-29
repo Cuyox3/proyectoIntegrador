@@ -30,6 +30,9 @@ body {
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 
 /* ==========================================================================
@@ -954,4 +957,232 @@ body {
     background-color: var(--brand-medium);
     color: #ffffff;
     transform: translateY(-2px);
+}
+
+/*Formulario de registro de usuarios*/
+
+* { /* Selecciona todos los elementos de la página */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina espacios internos por defecto */
+    box-sizing: border-box; /* Hace que padding y borde no aumenten el tamaño total */
+}
+
+body { /* Aplica estilos generales al cuerpo */
+    font-family: Georgia, serif; /* Define una tipografía similar al diseño */
+    background-color: #eef8f1; /* Coloca un fondo verde muy claro */
+}
+
+.navbar-custom { /* Estiliza la barra superior */
+    background-color: #173d29; /* Coloca fondo verde oscuro */
+    padding: 18px 0; /* Agrega espacio arriba y abajo */
+    color: white; /* Cambia el texto a color blanco */
+}
+
+.logo { /* Estiliza el nombre Green-Nova */
+    font-size: 26px; /* Define el tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    margin: 0; /* Elimina margen externo */
+}
+
+nav a { /* Estiliza los enlaces del menú */
+    color: white; /* Coloca los enlaces en blanco */
+    text-decoration: none; /* Quita el subrayado */
+    margin: 0 15px; /* Agrega separación horizontal */
+    font-weight: bold; /* Hace los enlaces más gruesos */
+}
+
+nav a:hover { /* Aplica estilo cuando el mouse pasa encima */
+    color: #7ccf8a; /* Cambia el color a verde claro */
+}
+
+.btn-login { /* Estiliza el botón de iniciar sesión */
+    background-color: transparent; /* Deja el fondo transparente */
+    color: white; /* Coloca el texto blanco */
+    border: 1px solid white; /* Agrega borde blanco */
+    border-radius: 30px; /* Redondea el botón */
+    padding: 10px 25px; /* Agrega espacio interno */
+    font-weight: bold; /* Hace el texto más grueso */
+}
+
+.main-section { /* Estiliza la zona principal */
+    min-height: 760px; /* Da una altura mínima a la sección */
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-image: linear-gradient(rgba(238,248,241,0.9), rgba(238,248,241,0.9)), url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e"); /* Coloca imagen de hojas con capa clara */
+    background-size: cover; /* Hace que el fondo cubra toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+.form-container { /* Estiliza el contenedor verde */
+    background-color: #173d29; /* Coloca fondo verde oscuro */
+    width: 520px; /* Define el ancho del formulario */
+    padding: 35px; /* Agrega espacio interno */
+    border-radius: 20px; /* Redondea las esquinas */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* Agrega sombra */
+}
+
+.form-container h1 { /* Estiliza el título del formulario */
+    color: white; /* Coloca el texto blanco */
+    text-align: center; /* Centra el texto */
+    font-size: 28px; /* Define tamaño del título */
+    font-weight: bold; /* Hace el título más grueso */
+    margin-bottom: 25px; /* Agrega separación inferior */
+}
+
+.form-box { /* Estiliza la caja blanca del formulario */
+    background-color: white; /* Coloca fondo blanco */
+    padding: 25px; /* Agrega espacio interno */
+    border-radius: 15px; /* Redondea las esquinas */
+}
+
+.form-label { /* Estiliza las etiquetas */
+    font-weight: bold; /* Hace las etiquetas más gruesas */
+    color: #26332b; /* Coloca color oscuro al texto */
+}
+
+.form-control { /* Estiliza los inputs de Bootstrap */
+    border-radius: 8px; /* Redondea los campos */
+    padding: 12px; /* Agrega espacio interno */
+    font-size: 14px; /* Define tamaño del texto */
+}
+
+.form-control:focus { /* Estiliza el campo cuando está seleccionado */
+    border-color: #198754; /* Cambia el borde a verde */
+    box-shadow: 0 0 5px rgba(25, 135, 84, 0.4); /* Agrega sombra verde */
+}
+
+.btn-submit { /* Estiliza el botón de registro */
+    background-color: #16884b; /* Coloca fondo verde */
+    color: white; /* Coloca texto blanco */
+    border: none; /* Quita el borde */
+    border-radius: 6px; /* Redondea el botón */
+    padding: 12px 25px; /* Agrega espacio interno */
+    font-weight: bold; /* Hace el texto más grueso */
+}
+
+.btn-submit:hover { /* Aplica estilo al pasar el mouse */
+    background-color: #0f6b39; /* Oscurece el botón */
+}
+
+.footer-custom { /* Estiliza el pie de página */
+    background-color: #173d29; /* Coloca fondo verde oscuro */
+    color: white; /* Coloca texto blanco */
+    padding: 45px 0; /* Agrega espacio arriba y abajo */
+}
+
+.footer-custom p { /* Estiliza el texto central del footer */
+    margin: 0; /* Elimina margen */
+}
+
+.footer-custom span { /* Estiliza los iconos simulados */
+    margin-right: 15px; /* Agrega separación entre iconos */
+    font-size: 20px; /* Aumenta tamaño de iconos */
+}
+
+@media (max-width: 768px) { /* Aplica estilos en pantallas pequeñas */
+    .container { /* Selecciona contenedores Bootstrap */
+        flex-direction: column; /* Coloca elementos uno debajo de otro */
+        gap: 15px; /* Agrega separación entre elementos */
+    }
+
+    nav a { /* Estiliza enlaces en celular */
+        display: inline-block; /* Permite acomodarlos correctamente */
+        margin: 5px; /* Reduce separación */
+    }
+
+    .form-container { /* Ajusta el formulario en celular */
+        width: 90%; /* Ocupa el 90% del ancho */
+    }
+}
+
+/*seccion Ingresar usuario*/
+
+
+/* Sección de fondo con la imagen */
+.ingreso {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-image: url('../img/background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Tarjeta principal verde  */
+.figma-container {
+    background-color: var(--brand-dark);
+    border-radius: var(--br-24);
+    padding: 40px 35px;
+    color: #ffffff;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(35, 61, 44, 0.15);
+}
+
+/* Título de la tarjeta principal */
+.figma-container h2 {
+    font-family: var(--font-work-sans);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Caja interna blanca */
+.figma-inner-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    color: #333333;
+}
+
+/* Contenedor propio del formulario */
+.form-box {
+    background-color: white; 
+    padding: 25px; 
+    border-radius: 15px; 
+}
+
+/* Etiquetas (Labels) */
+.figma-inner-card .form-label {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #333333; 
+    margin-bottom: 6px;
+}
+
+/* Campos de entrada  */
+.figma-inner-card .form-control {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.9rem;  
+    color: #495057;
+    background-color: #fafafa;
+}
+
+/* Efecto  */
+.figma-inner-card .form-control:focus {
+    border-color: var(--brand-accent); 
+    box-shadow: 0 0 0 0.25rem rgba(104, 186, 127, 0.25);
+    background-color: #ffffff;
+}
+
+/* Botón Enviar */
+.btn-submit { 
+    background-color: #16884b; 
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 12px 25px; 
+    font-weight: bold; 
+}
+
+.btn-submit:hover { 
+    background-color: #0f6b39; 
 }
