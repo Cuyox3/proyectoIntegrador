@@ -9,10 +9,16 @@ function mostrarAlerta(mensaje, tipo) {
     if (!contenedorAlertas) { 
         contenedorAlertas = document.createElement("div"); 
         contenedorAlertas.id = "alertas"; 
+        
         const formulario = document.querySelector(".form-box"); 
-        formulario.parentNode.insertBefore(contenedorAlertas, formulario); 
+        if (formulario) {
+            formulario.parentNode.insertBefore(contenedorAlertas, formulario); 
+        } else {
+            document.body.appendChild(contenedorAlertas);
+        }
     }
 
+    // Corregido: Se eliminaron las barras inversas innecesarias en data-bs-dismiss
     contenedorAlertas.innerHTML = `
         <div class="alert alert-${tipo} alert-dismissible fade show" role="alert">
             ${mensaje}
@@ -28,6 +34,8 @@ function autenticarUsuario(event) {
     // Capturar selectores del DOM
     const emailInput = document.getElementById("login-email");
     const passwordInput = document.getElementById("login-password");
+
+    if (!emailInput || !passwordInput) return;
 
     const emailValue = emailInput.value.trim();
     const passwordValue = passwordInput.value;
@@ -45,7 +53,6 @@ function autenticarUsuario(event) {
     const usuarioValido = usuarios.find(user => user.email === emailValue && user.password === passwordValue);
 
     if (usuarioValido) {
-        // Almacenar el estado de la sesión actual antes de redirigir (Opcional, útil para el Navbar)
         sessionStorage.setItem("sesionActiva", JSON.stringify({
             nombre: usuarioValido.nombre,
             email: usuarioValido.email
@@ -53,21 +60,25 @@ function autenticarUsuario(event) {
 
         mostrarAlerta("¡Inicio de sesión exitoso! Redirigiendo...", "success");
 
-        // 4. Redirección automática tras 1.5 segundos a la página de inicio (index.html en la raíz)
+        // 4. Redirección automática tras 1.5 segundos
         setTimeout(() => {
             window.location.href = "../index.html";
         }, 1500);
 
     } else {
-        // Manejo de errores de autenticación
+        // Ahora esta alerta se ejecutará sin romperse por errores previos
         mostrarAlerta("El correo electrónico o la contraseña son incorrectos.", "danger");
     }
 }
 
-// Asegurar el montaje de los escuchas de eventos una vez que el DOM esté disponible
+// Asegurar el montaje de los escuchas de eventos una vez que el DOM esté completamente listo
 document.addEventListener("DOMContentLoaded", () => {
     const formularioLogin = document.getElementById("login-form");
+    
     if (formularioLogin) {
         formularioLogin.addEventListener("submit", autenticarUsuario);
+        console.log("Formulario de login detectado y vinculado correctamente.");
+    } else {
+        console.error("Error: No se pudo encontrar el elemento con ID 'login-form'.");
     }
 });
