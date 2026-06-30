@@ -1095,3 +1095,94 @@ nav a:hover { /* Aplica estilo cuando el mouse pasa encima */
         width: 90%; /* Ocupa el 90% del ancho */
     }
 }
+
+/*seccion Ingresar usuario*/
+
+
+/* Sección de fondo con la imagen */
+.ingreso {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-image: url('../img/background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Tarjeta principal verde  */
+.figma-container {
+    background-color: var(--brand-dark);
+    border-radius: var(--br-24);
+    padding: 40px 35px;
+    color: #ffffff;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(35, 61, 44, 0.15);
+}
+
+/* Título de la tarjeta principal */
+.figma-container h2 {
+    font-family: var(--font-work-sans);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Caja interna blanca */
+.figma-inner-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    color: #333333;
+}
+
+/* Contenedor propio del formulario */
+.form-box {
+    background-color: white; 
+    padding: 25px; 
+    border-radius: 15px; 
+}
+
+/* Etiquetas (Labels) */
+.figma-inner-card .form-label {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #333333; 
+    margin-bottom: 6px;
+}
+
+/* Campos de entrada  */
+.figma-inner-card .form-control {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.9rem;  
+    color: #495057;
+    background-color: #fafafa;
+}
+
+/* Efecto  */
+.figma-inner-card .form-control:focus {
+    border-color: var(--brand-accent); 
+    box-shadow: 0 0 0 0.25rem rgba(104, 186, 127, 0.25);
+    background-color: #ffffff;
+}
+
+/* Botón Enviar */
+.btn-submit { 
+    background-color: #16884b; 
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 12px 25px; 
+    font-weight: bold; 
+}
+
+.btn-submit:hover { 
+    background-color: #0f6b39; 
+}
