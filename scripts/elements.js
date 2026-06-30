@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Detectar si estamos dentro de templates/ para ajustar las rutas
+    const enTemplates = window.location.pathname.includes('/templates/');
+    const base = enTemplates ? '../' : '';  // Prefijo para subir un nivel si estamos en templates/
+    const tpl = enTemplates ? '' : 'templates/';  // Prefijo para llegar a templates/ desde la raíz
     /*CARGA DE ICONOS CON FONTAWESOME*/
     if (!document.querySelector('link[href*="font-awesome"]')) {
         const fontAwesome = document.createElement('link');
@@ -15,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="container">
                 
                 <!-- Logotipo de green -->
-                <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+                <a class="navbar-brand d-flex align-items-center gap-3" href="${base}index.html">
                     <div class="logo-container">
-                        <img src="img/icon_logo.svg" alt="Green-Nova Logo">
+                        <img src="${base}img/icon_logo.svg" alt="Green-Nova Logo">
                     </div>
                     <span class="fw-bold fs-4 tracking-wide text-white">Green-Nova</span>
                 </a>
@@ -32,16 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Menu Desplegable -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto mb-3 mb-md-0 gap-md-2 text-center">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contactanos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="${base}index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="${base}${tpl}productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="${base}${tpl}contacto.html">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="${base}${tpl}nosotros.html">Nosotros</a></li>
                     </ul>
                     
                     <!-- Botones -->
                     <div class="d-flex flex-column flex-md-row gap-2 justify-content-center align-items-center">
                         <a href="#" class="btn btn-outline-brand-header w-100 w-md-auto text-decoration-none text-center">Iniciar Sesión</a>
-                        <a href="#" class="btn btn-brand-header w-100 w-md-auto text-decoration-none text-center shadow-sm">Registrarse</a>
+                        <a href="${base}${tpl}registroUsuarios.html" class="btn btn-brand-header w-100 w-md-auto text-decoration-none text-center shadow-sm">Registrarse</a>
                     </div>
                 </div>
 
