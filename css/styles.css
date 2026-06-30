@@ -1186,3 +1186,34 @@ nav a:hover { /* Aplica estilo cuando el mouse pasa encima */
 .btn-submit:hover { 
     background-color: #0f6b39; 
 }
+
+/*ESTILOS RESPONSIVOS */
+@media (max-width: 768px) {
+    
+    
+    .ingreso {
+        padding: 30px 15px;
+    }
+
+    
+    .figma-container {
+        padding: 25px 20px;
+        border-radius: 16px; 
+    }
+
+    .figma-inner-card {
+        padding: 20px 15px;
+    }
+
+   
+    .form-box {
+        padding: 10px; 
+    }
+
+    
+    .btn-submit {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+}

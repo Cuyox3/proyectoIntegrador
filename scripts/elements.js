@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Logotipo de green -->
                 <a class="navbar-brand d-flex align-items-center gap-3" href="#">
                     <div class="logo-container">
-                        <img src="img/icon_logo.svg" alt="Green-Nova Logo">
+                        <img src="/img/icon_logo.svg" alt="Green-Nova Logo">
                     </div>
                     <span class="fw-bold fs-4 tracking-wide text-white">Green-Nova</span>
                 </a>
