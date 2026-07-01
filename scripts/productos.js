@@ -1,736 +1,380 @@
+// ==========================================
 // Plantas de interior
+// ==========================================
 export const plantasInterior = [
-
   {
-
-    idProductoProducto: 1,
-
+    idProducto: 1,
     nombreProducto: "Monstera Deliciosa",
-
     precioProducto: 950,
-
-    luz:"Indirecta brillante",
-
-    riego:"1 vez por semana",
-
-    Funcion:"adorno",
-
+    luz: "Indirecta brillante",
+    riego: "1 vez por semana",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Indirecta brillante, riego: 1 vez por semana",
-
     imagen: "https://images.pexels.com/photos/37820513/pexels-photo-37820513.jpeg"
-
   },
-
   {
-
     idProducto: 2,
-
     nombreProducto: "Sansevieria Trifasciata",
-
     precioProducto: 450,
-
-    luz:"",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Baja a alta",
+    riego: "Cada 2 semanas",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Baja a alta, riego: Cada 2 semanas",
-
     imagen: "https://images.pexels.com/photos/9809329/pexels-photo-9809329.jpeg"
-
   },
-
   {
-
     idProducto: 3,
-
     nombreProducto: "Epipremnum Aureum",
-
     precioProducto: 350,
-
-    luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Indirecta media",
+    riego: "1 vez por semana",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Indirecta media, riego: 1 vez por semana",
-
     imagen: "https://images.pexels.com/photos/5215510/pexels-photo-5215510.jpeg"
-
   },
-
   {
-
     idProducto: 4,
-
     nombreProducto: "Spathiphyllum",
-
     precioProducto: 380,
-
-    luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Indirecta baja",
+    riego: "Mantener húmedo",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Indirecta baja, riego: Mantener húmedo",
-
     imagen: "https://images.pexels.com/photos/9731992/pexels-photo-9731992.jpeg"
-
   },
-
   {
-
     idProducto: 5,
-
     nombreProducto: "Ficus Elastica",
-
     precioProducto: 650,
-
-    luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Indirecta brillante",
+    riego: "Cada 7-10 días",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Indirecta brillante, riego: Cada 7-10 días",
-
     imagen: "https://images.pexels.com/photos/8989427/pexels-photo-8989427.jpeg"
-
   },
-
   {
-
     idProducto: 6,
-
     nombreProducto: "Zamioculcas Zamiifolia",
-
     precioProducto: 550,
-
-    luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Baja a media",
+    riego: "Cada 2-3 semanas",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Baja a media, riego: Cada 2-3 semanas",
-
     imagen: "https://images.pexels.com/photos/10194608/pexels-photo-10194608.jpeg"
-
   },
-
   {
-
     idProducto: 7,
-
     nombreProducto: "Chamaedorea Elegans",
-
     precioProducto: 420,
-
-    luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Indirecta media",
+    riego: "1 vez por semana",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Indirecta media, riego: 1 vez por semana",
-
     imagen: "https://images.pexels.com/photos/3952088/pexels-photo-3952088.jpeg"
-
   },
-
   {
-
     idProducto: 8,
-
     nombreProducto: "Dracaena Marginata",
-
     precioProducto: 480,
-
-    luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Indirecta brillante",
+    riego: "Cada 10 días",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Indirecta brillante, riego: Cada 10 días",
-
     imagen: "https://images.pexels.com/photos/3952088/pexels-photo-3952088.jpeg"
-
   },
-
   {
-
     idProducto: 9,
-
     nombreProducto: "Aglaonema",
-
     precioProducto: 520,
-
-    luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Baja a media",
+    riego: "1 vez por semana",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Baja a media, riego: 1 vez por semana",
-
     imagen: "https://images.pexels.com/photos/5672795/pexels-photo-5672795.jpeg"
-
   },
-
   {
-
     idProducto: 10,
-
     nombreProducto: "Philodendron Hederaceum",
-
     precioProducto: 390,
-
-    luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Indirecta media",
+    riego: "Cada 7 días",
+    Funcion: "adorno",
     descripcion: "planta para interior luz: Indirecta media, riego: Cada 7 días",
-
     imagen: "https://images.pexels.com/photos/3854750/pexels-photo-3854750.jpeg"
-
   }
-
 ];
 
-
-
+// ==========================================
 // Plantas de exterior
-
+// ==========================================
 export const plantasExterior = [
-
   {
-
     idProducto: 1,
-
     nombreProducto: "Lavandula spp.",
-
     precioProducto: 350,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sol directo",
+    riego: "1 vez cada 1 o 2 semanas",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sol directo, riego: 1 vez cada 1 o 2 semanas",
-
     imagen: "https://images.pexels.com/photos/12970054/pexels-photo-12970054.jpeg"
-
   },
-
   {
-
     idProducto: 2,
-
     nombreProducto: "Aloe barbadensis",
-
     precioProducto: 400,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sol directo o resolana",
+    riego: "1 vez cada 2 o 3 semanas",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sol directo o resolana, riego: 1 vez cada 2 o 3 semanas",
-
     imagen: "https://images.pexels.com/photos/34465158/pexels-photo-34465158.jpeg"
-
   },
-
   {
-
     idProducto: 3,
-
     nombreProducto: "Bougainvillea spp.",
-
     precioProducto: 650,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sol directo",
+    riego: "1 o 2 veces por semana",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sol directo, riego: 1 o 2 veces por semana",
-
     imagen: "https://images.pexels.com/photos/16100361/pexels-photo-16100361.jpeg"
-
   },
-
   {
-
     idProducto: 4,
-
     nombreProducto: "Citrus x limon",
-
     precioProducto: 750,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sol directo",
+    riego: "2 a 3 veces por semana",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sol directo, riego: 2 a 3 veces por semana",
-
     imagen: "https://images.pexels.com/photos/36977032/pexels-photo-36977032.jpeg"
-
   },
-
   {
-
     idProducto: 5,
-
     nombreProducto: "Pachypodium lamerei",
-
     precioProducto: 720,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sol directo",
+    riego: "1 vez cada 2 o 3 semanas",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sol directo, riego: 1 vez cada 2 o 3 semanas",
-
     imagen: "https://images.pexels.com/photos/31964234/pexels-photo-31964234.jpeg"
-
   },
-
   {
-
     idProducto: 6,
-
     nombreProducto: "Nephrolepis exaltata",
-
     precioProducto: 380,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sombra o semisombra",
+    riego: "2 a 3 veces por semana",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sombra o semisombra, riego: 2 a 3 veces por semana",
-
     imagen: "https://images.pexels.com/photos/10903254/pexels-photo-10903254.jpeg"
-
   },
-
   {
-
     idProducto: 7,
-
     nombreProducto: "Spathiphyllum wallisii",
-
     precioProducto: 450,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sombra o semisombra",
+    riego: "2 a 3 veces por semana",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sombra o semisombra, riego: 2 a 3 veces por semana",
-
     imagen: "https://images.pexels.com/photos/19404633/pexels-photo-19404633.jpeg"
-
   },
-
   {
-
     idProducto: 8,
-
     nombreProducto: "Beaucarnea recurvata",
-
     precioProducto: 750,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sol o semisombra",
+    riego: "1 vez cada 2 o 3 semanas",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sol o semisombra, riego: 1 vez cada 2 o 3 semanas",
-
     imagen: "https://images.pexels.com/photos/30343682/pexels-photo-30343682.jpeg"
-
   },
-
   {
-
     idProducto: 9,
-
     nombreProducto: "Helianthus annuus",
-
     precioProducto: 320,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sol directo",
+    riego: "3 a 4 veces por semana",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sol directo, riego: 3 a 4 veces por semana (casi diario en calor)",
-
     imagen: "https://images.pexels.com/photos/14876097/pexels-photo-14876097.jpeg"
-
   },
-
   {
-
     idProducto: 10,
-
     nombreProducto: "Jasminum sambac",
-
     precioProducto: 480,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "Sol directo",
+    riego: "2 a 3 veces por semana",
+    Funcion: "adorno",
     descripcion: "planta para exterior luz: Sol directo, riego: 2 a 3 veces por semana",
-
     imagen: "https://images.pexels.com/photos/37745598/pexels-photo-37745598.jpeg"
-
   }
-
 ];
 
-
-
+// ==========================================
 // Macetas
-
+// ==========================================
 export const macetas = [
-
   {
-
     idProducto: "m001",
-
     nombreProducto: "Cilíndricas",
-
     precioProducto: 250,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
-    descripcion: "Diseño minimalista de líneas limpias. Nuestra maceta cilíndrica resalta por su estética moderna y contemporánea. idProductoeal para plantas de crecimiento vertical como las sansevierias. Cuenta con un excelente acabado que se adapta a cualquier rincón de tu sala u oficina.",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
+    descripcion: "Diseño minimalista de líneas limpias. Nuestra maceta cilíndrica resalta por su estética moderna y contemporánea. Ideal para plantas de crecimiento vertical como las sansevierias. Cuenta con un excelente acabado que se adapta a cualquier rincón de tu sala u oficina.",
     imagen: "https://zuccudesign.com/cdn/shop/products/cilindricamediana1.jpg?v=1674328585"
-
   },
-
   {
-
     idProducto: "m002",
-
     nombreProducto: "Cubremacetas",
-
     precioProducto: 350,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "El accesorio perfecto para ocultar la maceta de plástico. Este cubremacetas está diseñado exclusivamente para dar un toque decorativo instantáneo. No tiene agujero de drenaje, lo que evita filtraciones de agua y protege tus muebles mientras hace lucir tus plantas espectaculares.",
-
     imagen: "https://s.alicdn.com/@sc04/kf/Hb48801a291294d11ad14329a2ec5e746V.jpg_300x300.jpg"
-
   },
-
   {
-
     idProducto: "m003",
-
     nombreProducto: "Plástico con Texturas",
-
     precioProducto: 350,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Ligera, resistente y con un relieve único. Fabricada con polímeros de alta resistencia, esta maceta combina la ligereza del plástico con un acabado texturizado premium que imita materiales artesanales. Es duradera, fácil de limpiar y perfecta tanto para interiores como exteriores.",
-
     imagen: "https://http2.mlstatic.com/D_NQ_NP_702598-MLM109425230926_042026-O.webp"
-
   },
-
   {
-
     idProducto: "m004",
-
     nombreProducto: "Colgantes",
-
     precioProducto: 550,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
-    descripcion: "idProductoeal para plantas colgantes y espacios reducidProductoos. Aprovecha la altura de tu hogar con esta maceta colgante. Incluye un sistema de soporte seguro y resistente, idProductoeal para lucir plantas tipo teléfono (pothos), listones o suculentas colgantes, dándole dinamismo a tus paredes o balcones.",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
+    descripcion: "Ideal para plantas colgantes y espacios reducidos. Aprovecha la altura de tu hogar con esta maceta colgante. Incluye un sistema de soporte seguro y resistente, ideal para lucir plantas tipo teléfono (pothos), listones o suculentas colgantes, dándole dinamismo a tus paredes o balcones.",
     imagen: "https://http2.mlstatic.com/D_NQ_NP_612416-MLM46471454692_062021-O.webp"
-
   },
-
   {
-
     idProducto: "m005",
-
     nombreProducto: "Terracota",
-
     precioProducto: 350,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Arcilla clásica y porosa para una óptima salud radicular. La maceta de terracota tradicional es la favorita de los expertos en plantas. Su material poroso permite que la tierra 'respire' y el exceso de humedad se evapore fácilmente, previniendo eficazmente la pudrición de las raíces.",
-
-    imagen: "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&widProductoth=1946"
-
+    imagen: "https://agostore.es/cdn/shop/files/macetas-egipto-terracota-artesanales.jpg?v=1776795450&width=1946"
   }
-
 ];
 
-
-
-
-
+// ==========================================
 // Accesorios
-
+// ==========================================
 export const accesorios = [
-
   {
-
     idProducto: 1,
-
     nombreProducto: "Globo autoriego",
-
     precioProducto: 550,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Accesorio de riego automático. Función: Libera agua lentamente",
-
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_L9-wuFoy3qmonWNwS9qaFFWWy1b3xeL6W2CLt26mA&s=10"
-
   },
-
   {
-
     idProducto: 2,
-
     nombreProducto: "Atomizadores",
-
     precioProducto: 350,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
-    descripcion: "Accesorio rociador de agua. Función: Para rociar pequeñas cantidProductoades de agua",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
+    descripcion: "Accesorio rociador de agua. Función: Para rociar pequeñas cantidades de agua",
     imagen: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTLAd5a19ZVzCXbYmzLVdJm0aQIXml1kPi-Etwq0msckVzy6U4ZnYuZb31UsAeyJLxd7D8AWrDznCyfBL91lCHyuF-5KCfAblT2oWU7WSssfhDXNgMSfhnXnTP0-8XXeDMwn9qizFY&usqp=CAc"
-
   },
-
   {
-
     idProducto: 3,
-
-    nombreProducto: "MedidProductoor de humedad",
-
+    nombreProducto: "Medidor de humedad",
     precioProducto: 750,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
-    descripcion: "Accesorio medidProductoor de agua. Función: MidProductoe el exceso de agua",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
+    descripcion: "Accesorio medidor de agua. Función: Mide el exceso de agua",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4gy2ii8yTvaFODC55mHrMAwWk_BYRWdq_c1swxEGXaQ&s=10"
-
   },
-
   {
-
     idProducto: 4,
-
     nombreProducto: "Palas de plastico",
-
     precioProducto: 250,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Herramienta tipo pala. Función: Para poder trasladar plantas, quitar tierra, etc.",
-
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUDgjHTNS4SSgMZMHRvfvVbb8rtkjEsR6sif5JgszQg&s=10"
-
   },
-
   {
-
     idProducto: 5,
-
     nombreProducto: "Maceteros y bases",
-
     precioProducto: 1550,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Bases para macetas. Función: Colocar macetas y tener mejor orden",
-
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY3MwLbp6QEcG5-G4z1HuDYVKkCe8XvbehyxibaxwnFQ&s=10"
-
   },
-
   {
-
     idProducto: 6,
-
     nombreProducto: "Soportes y repisas",
-
     precioProducto: 1450,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Macetero colgante. Función: Tener mejor vista de las plantas y soporte para macetas",
-
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRkGIjTWal0heBsaypJ4uxaPBXbVJycHwc5GNZDh_CQ&s=10"
-
   },
-
   {
-
     idProducto: 7,
-
     nombreProducto: "Estacas y tutores",
-
     precioProducto: 250,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Musgo para plantas. Función: Adorno para plantas, y soporte para las ramas",
-
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscmWVXY7yup7_vx9ZB58CbAjBdrAJz-G52ZqqRkCVGg&s"
-
   },
-
   {
-
     idProducto: 8,
-
     nombreProducto: "Fertilizante organico",
-
     precioProducto: 450,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Nutrientes para plantas. Función: Ayuda al crecimiento de plantas, y evita plagas",
-
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzm5sIIkT6djhUDUwoCPKxJhXgYf0UhqraKZaSFqHwuQ&s=10"
-
   },
-
   {
-
     idProducto: 9,
-
     nombreProducto: "Kits de tierra",
-
     precioProducto: 850,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Tierra preparada. Función: Ayuda al crecimiento de las plantas sin fertilizantes quimicos",
-
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDBMThPnWg8c6B8lc20zXnPi2YWzVegWhBinbbRGNBmQ&s=10"
-
   },
-
   {
-
     idProducto: 10,
-
     nombreProducto: "Piedras decorativas",
-
     precioProducto: 650,
-
-     luz:"N/A",
-
-    riego:"N/A",
-
-    Funcion:"adorno",
-
+    luz: "N/A",
+    riego: "N/A",
+    Funcion: "adorno",
     descripcion: "Piedras para decorar. Función: Para dar un acabado limpio y profesional a las macetas",
-
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EdJ4r5FWSwl7l8h2ExMrJWC0GWoFImmUVqVUCnIbhA&s=10"
-
   }
-
 ];
 
-
-
+// ==========================================
+// Cactus
+// ==========================================
 export const cactus = [
   {
     idProducto: 1,
@@ -759,7 +403,7 @@ export const cactus = [
     luz: "Pleno sol / Luz directa",
     riego: "Bajo (Muy resistente a sequías prolongadas)",
     Funcion: "Planta columnar",
-    descripcion: "Cactus de porte alto y estilizado con costillas marcadas. Excelente para dar altura a espacios o jardines exteriores.",
+    descripcion: "Cactus de porte alto y estilizado con costillas marcadas. Excelente para dar altura a espacios o jaraIdProductoos exteriores.",
     imagen: "https://conceptoverde.mx/wp-content/uploads/2025/10/6-87.jpg"
   },
   {
@@ -831,9 +475,62 @@ export const cactus = [
     Funcion: "Planta de colección",
     descripcion: "Cactus exótico y de colección. Sus espinas tienen una forma aplanada peculiar que simula escamas o fósiles de roca.",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pelecyphora_asseliformis_20070526.jpg/250px-Pelecyphora_asseliformis_20070526.jpg"
+  },
+  {
+    idProducto: 11,
+    nombreProducto: "Opuntia Microdasys",
+    precioProducto: 120,
+    luz: "Sol directo",
+    riego: "1 vez cada 3 semanas",
+    Funcion: "adorno",
+    descripcion: "cactus luz: Sol directo, riego: 1 vez cada 3 semanas",
+    imagen: "https://images.pexels.com/photos/2132240/pexels-photo-2132240.jpeg"
+  },
+  {
+    idProducto: 12,
+    nombreProducto: "Echinocactus Grusonii",
+    precioProducto: 250,
+    luz: "Sol directo",
+    riego: "1 vez al mes",
+    Funcion: "adorno",
+    descripcion: "cactus luz: Sol directo, riego: 1 vez al mes",
+    imagen: "https://images.pexels.com/photos/4622977/pexels-photo-4622977.jpeg"
+  },
+  {
+    idProducto: 13,
+    nombreProducto: "Mammillaria Hahniana",
+    precioProducto: 140,
+    luz: "Sol directo",
+    riego: "1 vez al mes",
+    Funcion: "adorno",
+    descripcion: "cactus luz: Sol directo, riego: 1 vez al mes",
+    imagen: "https://images.pexels.com/photos/3645055/pexels-photo-3645055.jpeg"
+  },
+  {
+    idProducto: 14,
+    nombreProducto: "Ferocactus Glaucescens",
+    precioProducto: 180,
+    luz: "Sol directo",
+    riego: "1 vez al mes",
+    Funcion: "adorno",
+    descripcion: "cactus luz: Sol directo, riego: 1 vez al mes",
+    imagen: "https://images.pexels.com/photos/1382394/pexels-photo-1382394.jpeg"
+  },
+  {
+    idProducto: 15,
+    nombreProducto: "Gymnocalycium Mihanovichii",
+    precioProducto: 160,
+    luz: "Indirecta brillante",
+    riego: "1 vez cada 3 semanas",
+    Funcion: "adorno",
+    descripcion: "cactus luz: Indirecta brillante, riego: 1 vez cada 3 semanas",
+    imagen: "https://images.pexels.com/photos/2306562/pexels-photo-2306562.jpeg"
   }
 ];
 
+// ==========================================
+// Suculentas
+// ==========================================
 export const suculentas = [
   {
     idProducto: 1,
@@ -934,5 +631,55 @@ export const suculentas = [
     Funcion: "Planta de ornato",
     descripcion: "Rosetas de hojas duras que toleran temperaturas muy bajas. Produce rápidamente pequeños brotes a su alrededor.",
     imagen: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=400"
+  },
+  {
+    idProducto: 11,
+    nombreProducto: "Echeveria Perlevon",
+    precioProducto: 150,
+    luz: "Sol directo o indirecto brillante",
+    riego: "1 vez cada 2 semanas",
+    Funcion: "adorno",
+    descripcion: "suculenta luz: Sol directo o indirecto brillante, riego: 1 vez cada 2 semanas",
+    imagen: "https://images.pexels.com/photos/1903965/pexels-photo-1903965.jpeg"
+  },
+  {
+    idProducto: 12,
+    nombreProducto: "Sempervivum Tectorum",
+    precioProducto: 120,
+    luz: "Sol directo",
+    riego: "1 vez cada 3 semanas",
+    Funcion: "adorno",
+    descripcion: "suculenta luz: Sol directo, riego: 1 vez cada 3 semanas",
+    imagen: "https://images.pexels.com/photos/1382396/pexels-photo-1382396.jpeg"
+  },
+  {
+    idProducto: 13,
+    nombreProducto: "Sedum Morganianum",
+    precioProducto: 180,
+    luz: "Indirecta brillante",
+    riego: "1 vez cada 10 a 14 días",
+    Funcion: "adorno",
+    descripcion: "suculenta luz: Indirecta brillante, riego: 1 vez cada 10 a 14 días",
+    imagen: "https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg"
+  },
+  {
+    idProducto: 14,
+    nombreProducto: "Crassula Ovata 'Gollum'",
+    precioProducto: 200,
+    luz: "Sol directo o resolana",
+    riego: "1 vez cada 2 semanas",
+    Funcion: "adorno",
+    descripcion: "suculenta luz: Sol directo o resolana, riego: 1 vez cada 2 semanas",
+    imagen: "https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg"
+  },
+  {
+    idProducto: 15,
+    nombreProducto: "Kalanchoe Thyrisflora",
+    precioProducto: 150,
+    luz: "Sol directo o indirecto brillante",
+    riego: "1 vez cada 2 semanas",
+    Funcion: "adorno",
+    descripcion: "suculenta luz: Sol directo o indirecto brillante, riego: 1 vez cada 2 semanas",
+    imagen: "https://images.pexels.com/photos/1006293/pexels-photo-1006293.jpeg"
   }
 ];
