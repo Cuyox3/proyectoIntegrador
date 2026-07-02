@@ -18,7 +18,6 @@ function mostrarAlerta(mensaje, tipo) {
         }
     }
 
-    // Corregido: Se eliminaron las barras inversas innecesarias en data-bs-dismiss
     contenedorAlertas.innerHTML = `
         <div class="alert alert-${tipo} alert-dismissible fade show" role="alert">
             ${mensaje}
@@ -27,52 +26,79 @@ function mostrarAlerta(mensaje, tipo) {
     `; 
 }
 
+//  Función para asegurar que el usuario de prueba exista en Local Storage
+function inicializarUsuarioPrueba() {
+    // Recuperamos los usuarios existentes o creamos un arreglo vacío si no hay ninguno
+    let usuarios = JSON.parse(localStorage.getItem("usuariosRegistrados")) || [];
+    
+    // Buscamos si ya existe el correo para no duplicarlo cada vez que recargues
+    const existeGreenNova = usuarios.some(user => user.usuario === "green.nova@gmail.com");
+
+    if (!existeGreenNova) {
+        const usuarioPrueba = {
+            usuario: "green.nova@gmail.com", 
+            password: "1234green",
+            nombre: "Green Nova Admin"
+        };
+        
+        // Agregamos el nuevo usuario al arreglo y lo guardamos
+        usuarios.push(usuarioPrueba);
+        localStorage.setItem("usuariosRegistrados", JSON.stringify(usuarios));
+        console.log("Usuario de prueba Green-Nova almacenado en Local Storage de manera exitosa.");
+    }
+}
+
 // Función para procesar y validar el acceso de un usuario
 function autenticarUsuario(event) {
-    event.preventDefault(); // Evita la recarga automática de la página
+    event.preventDefault(); 
 
-    // Capturar selectores del DOM
-    const emailInput = document.getElementById("login-email");
+    // Ajustado a "username" en lugar de "email" para alinearse a la instrucción "nombre de usuario"
+    const userInput = document.getElementById("login-username") || document.getElementById("login-email");
     const passwordInput = document.getElementById("login-password");
 
-    if (!emailInput || !passwordInput) return;
+    if (!userInput || !passwordInput) return;
 
-    const emailValue = emailInput.value.trim();
+    const userValue = userInput.value.trim();
     const passwordValue = passwordInput.value;
 
     // 1. Validación de campos obligatorios vacíos
-    if (emailValue === "" || passwordValue === "") {
-        mostrarAlerta("Todos los campos marcados con asterisco (*) son obligatorios.", "danger");
+    if (userValue === "" || passwordValue === "") {
+        mostrarAlerta("Todos los campos son obligatorios.", "danger");
         return;
     }
 
-    // 2. Recuperar la colección de usuarios registrados desde localStorage
+    // 2. Recuperar usuarios desde localStorage
     const usuarios = JSON.parse(localStorage.getItem("usuariosRegistrados")) || [];
 
-    // 3. Buscar correspondencia de credenciales
-    const usuarioValido = usuarios.find(user => user.email === emailValue && user.password === passwordValue);
+    // 3. Buscar correspondencia de credenciales (revisa tanto .usuario como .email por si acaso)
+    const usuarioValido = usuarios.find(user => 
+        (user.usuario === userValue || user.email === userValue) && user.password === passwordValue
+    );
 
     if (usuarioValido) {
         sessionStorage.setItem("sesionActiva", JSON.stringify({
             nombre: usuarioValido.nombre,
-            email: usuarioValido.email
+            usuario: usuarioValido.usuario || usuarioValido.email
         }));
 
         mostrarAlerta("¡Inicio de sesión exitoso! Redirigiendo...", "success");
 
         // 4. Redirección automática tras 1.5 segundos
         setTimeout(() => {
-            window.location.href = "../index.html";
+            window.location.href = "../index.html"; 
         }, 1500);
 
     } else {
-        // Ahora esta alerta se ejecutará sin romperse por errores previos
-        mostrarAlerta("El correo electrónico o la contraseña son incorrectos.", "danger");
+        // Mensaje explícito para usuario o contraseña inválidos
+        mostrarAlerta("El nombre de usuario o la contraseña son incorrectos.", "danger");
     }
 }
 
 // Asegurar el montaje de los escuchas de eventos una vez que el DOM esté completamente listo
 document.addEventListener("DOMContentLoaded", () => {
+    // Inicializar el almacenamiento del usuario de prueba requerido
+    inicializarUsuarioPrueba();
+
     const formularioLogin = document.getElementById("login-form");
     
     if (formularioLogin) {
