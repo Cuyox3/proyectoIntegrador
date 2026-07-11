@@ -61,6 +61,31 @@ function validarTelefono(telefono) {
         mostrarAlerta("El teléfono solo debe contener números.", "danger"); // Muestra alerta de error
         return false; // Retorna falso
     }
+    // valida que no se repitan numeros 
+    if (/^(\d)\1{9}$/.test(telefono)) {
+        mostrarAlerta("El número de telefono es inválido (dígitos repetidos).", "danger");
+        return false;
+    }
+
+    // valida que no se escriban secuencias acendentes o descendentes
+    for (let i = 0; i < telefono.length - 2; i++) { // Recorre el arreglo y de se detiene dos digitos antes
+        const a = parseInt(telefono[i]);      //analizamos por grupos de tres (por eso el -2)
+        const b = parseInt(telefono[i + 1]);  
+        const c = parseInt(telefono[i + 2]);
+
+        // Validamos si es Ascendente
+        if (b === a + 1 && c === b + 1){
+             mostrarAlerta("El numero que ingreso es invalido.", "danger");
+            return false;
+        } 
+        
+        // Validamos si es Descendente
+        if (b === a - 1 && c === b - 1){
+            mostrarAlerta("El teléfono que ingreso es invalido.", "danger");
+           return false; 
+        } 
+    }
+
 
     if (telefono.length !== 10) { // Valida que tenga exactamente 10 dígitos
         mostrarAlerta("El teléfono debe tener exactamente 10 dígitos.", "danger"); // Muestra alerta de error
