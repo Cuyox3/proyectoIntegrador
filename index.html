@@ -18,10 +18,63 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" />
   </head>
   <body>
+<!-- HERO SECTION -->
+    <main class="hero-container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transforma tu hogar con la frescura de la naturaleza</h1>
+                <p>Descubre nuestra selección exclusiva de plantas de interior y terrarios diseñados para llenar de vida cada rincón de tu casa. Encuentra la compañera perfecta para tu espacio, purifica tu aire y conecta con la tranquilidad que solo la naturaleza puede ofrecerte.</p>
+                <a href="./templates/productos.html" class="btn-catalog">Ver catálogo</a>
+            </div>
+            <div class="hero-image">
+                
+                <img src="https://r2.be.green/small/63d7aa762ea60314719303.jpg" alt="Plantas de interior en macetas decorativas">
+            </div>
+        </section>
+
+        <!-- PRODUCT CARDS -->
+        <section class="products-grid">
+            <!-- Tarjeta 1 -->
+            <div class="card" data-id="1">
+                <img src="https://www.eluniversal.com.mx/resizer/v2/DEINVHQLPFGOJNJAV3WVRTOT2Y.jpeg?auth=50b467c95486bd675505e0ad9399f3763912e9d2f220bbf05a38aaa7050391d9&smart=true&height=666" alt="plantas_Hogar">
+                <h3 class="product-title">Plantas Hogar</h3>
+                <button class="btn-add-cart" onclick="alert('Producto agregado al carrito')">Añadir al carrito</button>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card" data-id="2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjwX6I1MNKFQg-JUNiqAeb_-V_9v-3TT1lKdud_DuMJoum9OEG1cAeI8&s=10" alt="plantas oficina">
+                <h3 class="product-title">PLantas Oficina</h3>
+                <button class="btn-add-cart" onclick="alert('Producto agregado al carrito')">Añadir al carrito</button>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card" data-id="3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4CI7v-XaeyUojTlrAWwmXKvDTtSceGItZi7cXteBjE8K1YlSbTYwUG_U&s=10" alt="Cactus">
+                <h3 class="product-title">Cactus</h3>
+                <button class="btn-add-cart" onclick="alert('Producto agregado al carrito')">Añadir al carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- CARE TIPS SECTION -->
+    <section class="tips-section">
+        <div class="tips-container">
+            <div class="tips-image">
+                
+                <img src="https://content.cuerpomente.com/medio/2025/06/03/mujer-regando-una-albahaca_fba3c4da_1363118509_250603173346_1280x720.webp" alt="Manos plantando un brote">
+            </div>
+            <div class="tips-content">
+                <h2>Consejos de cuidado para principiantes</h2>
+                <p>Antes de regar, entierra tu dedo unos dos centímetros en la tierra: si está húmeda, espera unos días; si está completamente seca, es hora de regar. Además, asegúrate de que tus macetas siempre tengan agujeros de drenaje abajo; a las raíces les encanta la humedad, pero odian estar encharcadas.</p>
+            </div>
+        </div>
+    </section>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"></script>
     <script src="scripts/elements.js"></script>
+    
   </body>
 </html>

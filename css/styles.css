@@ -674,7 +674,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 60px;
+    padding: 70px;
 }
 
 .contacto-fern-img {
@@ -1185,4 +1185,319 @@ nav a:hover { /* Aplica estilo cuando el mouse pasa encima */
 
 .btn-submit:hover { 
     background-color: #0f6b39; 
+}
+
+/*Index */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --dark-green: #143F25;
+    --medium-green: #295B3C;
+    --light-green: #C9F0D0;
+    --button-green: #5CB885;
+    --button-hover: #4aa072;
+    --white: #FFFFFF;
+    --text-dark: #1E1E1E;
+}
+
+body {
+    background-color: var(--light-green);
+    color: var(--text-dark);
+}
+
+/* --- HEADER / NAV BAR --- */
+.header {
+    background-color: var(--dark-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    color: var(--white);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.logo-img {
+    height: 35px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: opacity 0.3s;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-login {
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--button-green);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background-color: rgba(92, 184, 133, 0.2);
+}
+
+.btn-register {
+    background-color: var(--button-green);
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-register:hover {
+    background-color: var(--button-hover);
+}
+
+/* --- HERO SECTION --- */
+.hero-container {
+    padding: 50px 8%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--dark-green);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+}
+
+.btn-catalog {
+    display: inline-block;
+    background-color: var(--button-green);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-catalog:hover {
+    background-color: var(--button-hover);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- PRODUCT CARDS --- */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: var(--dark-green);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.btn-add-cart {
+    background-color: var(--button-green);
+    color: var(--white);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+}
+
+.btn-add-cart:hover {
+    background-color: var(--button-hover);
+}
+
+/* --- CARE TIPS SECTION --- */
+.tips-section {
+    background-color: var(--medium-green);
+    color: var(--white);
+    padding: 40px 8%;
+}
+
+.tips-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tips-image {
+    flex: 1;
+}
+
+.tips-image img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tips-content {
+    flex: 2;
+}
+
+.tips-content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.tips-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: #1A2E22;
+    color: var(--white);
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--button-green);
+}
+
+.copyright p {
+    font-size: 0.95rem;
+}
+
+.contact a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVIDAD (Móviles y Tablets) --- */
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    .tips-container {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }
