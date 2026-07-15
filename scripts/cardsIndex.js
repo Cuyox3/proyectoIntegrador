@@ -71,7 +71,7 @@ function renderizarTarjetas(productos, mensaje = "No hay productos.") {
               ${p.descripcion || "Sin descripción"}
             </p>
 
-            <button class="btn btn-sm btn-success mt-auto  w-100">
+            <button class="btn btn-sm btn-success mt-auto  w-100 btnComprar">
               Comprar
             </button>
 
@@ -84,3 +84,16 @@ function renderizarTarjetas(productos, mensaje = "No hay productos.") {
 }
 
 renderizarTarjetas(categorias.todos);
+
+/** Metodo para mandar mensaje de alerta del boton añadir carrito */
+    document.addEventListener('DOMContentLoaded', () => {
+    // Selecciona todos los botones que tienen la clase "btn-add-cart"
+    const botonesCarrito = document.querySelectorAll('.btnComprar');
+
+    // Escucha el click en cada uno de ellos y lanza la alerta única
+    botonesCarrito.forEach(boton => {
+        boton.addEventListener('click', () => {
+            alert('Producto agregado al carrito');
+        });
+    });
+});
