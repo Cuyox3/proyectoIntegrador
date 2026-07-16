@@ -167,19 +167,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     <div class="d-flex gap-4 fs-5">
 
-                        <a href="#" class="text-white opacity-75 text-decoration-none hover-accent">
+                        <a href="https://x.com/iniciarsesion?lang=es" class="text-white opacity-75 text-decoration-none hover-accent">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
 
-                        <a href="#" class="text-white opacity-75 text-decoration-none hover-accent">
+                        <a href="https://www.instagram.com/" class="text-white opacity-75 text-decoration-none hover-accent">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
 
-                        <a href="#" class="text-white opacity-75 text-decoration-none hover-accent">
+                        <a href="https://www.youtube.com/watch?v=Y1jTRsBRh3g" class="text-white opacity-75 text-decoration-none hover-accent">
                             <i class="fa-brands fa-youtube"></i>
                         </a>
 
-                        <a href="#" class="text-white opacity-75 text-decoration-none hover-accent">
+                        <a href="https://www.linkedin.com/" class="text-white opacity-75 text-decoration-none hover-accent">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
 
@@ -255,5 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
+
+  
 
 });
