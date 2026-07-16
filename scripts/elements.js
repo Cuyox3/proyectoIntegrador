@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </a>
 
                         <a
-                            href="${ruta}templates/registroUsuario.html"
+                            href="${ruta}templates/registroUsuarios.html"
                             class="btn btn-brand-header w-100 w-md-auto text-decoration-none text-center shadow-sm">
                             Registrarse
                         </a>
