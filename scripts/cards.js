@@ -45,9 +45,10 @@ function renderizarTarjetas(productos, mensaje = "No hay productos.") {
   productos.forEach((p) => {
     // Validación por si la imagen no viene definida
     const urlImagen = p.imagen || "";
+    // La pagina productos.html esta dentro de templates/, por eso subimos un nivel
     const imagen = urlImagen.startsWith("./") || urlImagen.startsWith("http")
       ? urlImagen
-      : `./img/${urlImagen}`;
+      : `../img/${urlImagen}`;
 
     // Soporte para propiedades largas o cortas (nombreProducto vs nombre)
     const nombre = p.nombreProducto || p.nombre || "Producto sin nombre";
@@ -128,15 +129,11 @@ botones.forEach(({ id, categoria, mensaje }) => {
 // Muestra por defecto todos los productos al abrir la página
 renderizarTarjetas(categorias.todos);
 
-/** Metodo para mandar mensaje de alerta del boton añadir carrito */
-    document.addEventListener('DOMContentLoaded', () => {
-    // Selecciona todos los botones que tienen la clase "btn-add-cart"
-    const botonesCarrito = document.querySelectorAll('.btnComprar');
-
-    // Escucha el click en cada uno de ellos y lanza la alerta única
-    botonesCarrito.forEach(boton => {
-        boton.addEventListener('click', () => {
-            alert('Producto agregado al carrito');
-        });
-    });
+/** Metodo para mandar mensaje de alerta del boton comprar.
+ * Se escucha el click en el contenedor (delegacion) para que tambien
+ * funcione con las tarjetas que se vuelven a renderizar al filtrar. */
+contenedor.addEventListener("click", (evento) => {
+  if (evento.target.classList.contains("btnComprar")) {
+    alert("Producto agregado al carrito");
+  }
 });
