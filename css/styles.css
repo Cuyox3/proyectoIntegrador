@@ -900,7 +900,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* 1. Anulamos los 250px fijos y dejamos que ocupe todo el ancho del celular */
+  /*Anulamos los 250px fijos y dejamos que ocupe todo el ancho del celular */
   .menu-lateral {
     width: 100% !important; 
     position: relative !important; /* Quitamos el sticky en celular para que fluya mejor */
@@ -908,7 +908,7 @@ body {
     margin-bottom: 24px !important; 
   }
 
-  /* 2. Forzamos la fila horizontal (anulando tu flex-direction: column general) */
+  /* Forzamos la fila horizontal  */
   .lista-menu {
     flex-direction: row !important; 
     width: 100vw;
@@ -919,7 +919,7 @@ body {
     -webkit-overflow-scrolling: touch;
   }
 
-  /* 3. Ocultamos la barra de scroll */
+  /* Ocultamos la barra de scroll */
   .lista-menu::-webkit-scrollbar {
     display: none;
   }
@@ -928,10 +928,10 @@ body {
     scrollbar-width: none;
   }
 
-  /* 4. ¡EL ARREGLO FINAL! Anulamos el width: 100% de tus botones */
+  /*  Anulamos el width*/
   .btn-filtro {
     width: auto !important; 
-    min-width: max-content !important; /* El texto jamás se cortará */
+    min-width: max-content !important; 
   }
 }
 
